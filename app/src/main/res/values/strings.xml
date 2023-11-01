@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YemekTarifiApp</string>
+    <string name="editTextNameHint">Name</string>
+    <string name="editTextPasswordHint">Password</string>
+    <string name="textViewLogIn">Log In</string>
+    <string name="buttonLogIn">Log In</string>
+    <string name="textViewForgotPassword">Forgot your password?</string>
+    <string name="textViewSignUp">Sign Up</string>
+    <string name="editTextEmailHint">Email</string>
+    <string name="checkBoxText">I would like to receive your newsletter and other promotional information.</string>
+    <string name="buttonSignUp">SIGN UP</string>
+    <string name="buttonSend">Send</string>
+
+</resources>
