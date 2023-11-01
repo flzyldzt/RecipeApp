@@ -3,8 +3,6 @@ package com.example.yemektarifiapp;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,9 +14,9 @@ import android.widget.TextView;
 public class PasswordReset extends Fragment {
 
     View view;
-    TextView textView1;
-    EditText editText;
-    Button button;
+    TextView textViewResetPassword;
+    EditText editTextResetPassword;
+    Button buttonResetPassword;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -29,8 +27,8 @@ public class PasswordReset extends Fragment {
     }
 
     public void definePasswordResetViews() {
-        textView1 = view.findViewById(R.id.textViewResetPassword);
-        editText = view.findViewById(R.id.editTextResetPassword);
-        button = view.findViewById(R.id.buttonReSetPassword);
+        textViewResetPassword = view.findViewById(R.id.textViewResetPassword);
+        editTextResetPassword = view.findViewById(R.id.editTextResetPassword);
+        buttonResetPassword = view.findViewById(R.id.buttonReSetPassword);
     }
 }

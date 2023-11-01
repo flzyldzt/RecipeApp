@@ -10,7 +10,6 @@ public class ChangeFragment {
 
     private Context context;
 
-    
     public ChangeFragment(Context context) {
         this.context = context;
     }

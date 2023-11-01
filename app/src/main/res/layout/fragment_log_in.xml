@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/textViewLogIn"
+        android:id="@+id/textViewLogInLogo"
         android:layout_width="141dp"
         android:layout_height="54dp"
         android:layout_marginStart="117dp"
@@ -53,7 +53,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewLogIn" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewLogInLogo" />
 
     <EditText
         android:id="@+id/editTextLogInPassword"

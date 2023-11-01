@@ -17,9 +17,9 @@ import android.widget.TextView;
 public class LogInFragment extends Fragment {
 
     View view;
-    TextView textViewLogIn, forgotPassword;
-    EditText editTextName, editTextPassword;
-    Button buttonLogIn, button2;
+    TextView textViewLogInLogo, textViewForgotPasswordLogIn;
+    EditText editTextNameLogIn, editTextPasswordLogIn;
+    Button buttonLogIn, buttonSignUp;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup parent,
@@ -34,16 +34,16 @@ public class LogInFragment extends Fragment {
     }
 
     public void defineLogInViews() {
-        textViewLogIn = view.findViewById(R.id.textViewLogIn);
-        editTextName = view.findViewById(R.id.editTextLogInName);
-        editTextPassword = view.findViewById(R.id.editTextLogInPassword);
+        textViewLogInLogo = view.findViewById(R.id.textViewLogInLogo);
+        editTextNameLogIn = view.findViewById(R.id.editTextLogInName);
+        editTextPasswordLogIn = view.findViewById(R.id.editTextLogInPassword);
         buttonLogIn = view.findViewById(R.id.buttonLogIn);
 
-        button2 = view.findViewById(R.id.buttonLogInSignUp);
-        button2.setOnClickListener(v -> transitionFromLoginToSignUp());
+        buttonSignUp = view.findViewById(R.id.buttonLogInSignUp);
+        buttonSignUp.setOnClickListener(v -> transitionFromLoginToSignUp());
 
-        forgotPassword = view.findViewById(R.id.forgotPasswordLogIn);
-        forgotPassword.setOnClickListener(v -> transitionFromLoginToReset());
+        textViewForgotPasswordLogIn = view.findViewById(R.id.forgotPasswordLogIn);
+        textViewForgotPasswordLogIn.setOnClickListener(v -> transitionFromLoginToReset());
     }
 
     public void transitionFromLoginToSignUp() {

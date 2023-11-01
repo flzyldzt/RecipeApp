@@ -15,10 +15,10 @@ import android.widget.TextView;
 public class SignUpFragment extends Fragment {
 
     View view;
-    TextView textView1, textView2, textView3;
-    EditText editText1, editText2, editText3;
-    CheckBox checkBox;
-    Button button;
+    TextView textViewSignUpLogo, textViewCheckBox, textViewForgotPasswordSignUp;
+    EditText editTextSignUpName, editTextSignUpEmail, editTextSignUpPassword;
+    CheckBox checkBoxSignUp;
+    Button buttonSignUp;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -31,16 +31,16 @@ public class SignUpFragment extends Fragment {
     }
 
     public void defineSignUpViews() {
-        textView1 = view.findViewById(R.id.textViewSignUp);
-        textView2 = view.findViewById(R.id.checkBoxText);
-        editText1 = view.findViewById(R.id.editTextSignUpName);
-        editText2 = view.findViewById(R.id.editTextSignUpEmail);
-        editText3 = view.findViewById(R.id.editTextSignUpPassword);
-        checkBox = view.findViewById(R.id.checkBoxSignUp);
-        button = view.findViewById(R.id.buttonSignUp);
+        textViewSignUpLogo = view.findViewById(R.id.textViewSignUpLogo);
+        textViewCheckBox = view.findViewById(R.id.checkBoxText);
+        editTextSignUpName = view.findViewById(R.id.editTextSignUpName);
+        editTextSignUpEmail = view.findViewById(R.id.editTextSignUpEmail);
+        editTextSignUpPassword = view.findViewById(R.id.editTextSignUpPassword);
+        checkBoxSignUp = view.findViewById(R.id.checkBoxSignUp);
+        buttonSignUp = view.findViewById(R.id.buttonSignUp);
 
-        textView3 = view.findViewById(R.id.forgotPasswordSignUp);
-        textView3.setOnClickListener(v -> transitionFromSignUpToReset());
+        textViewForgotPasswordSignUp = view.findViewById(R.id.forgotPasswordSignUp);
+        textViewForgotPasswordSignUp.setOnClickListener(v -> transitionFromSignUpToReset());
     }
 
     public void transitionFromSignUpToReset() {
