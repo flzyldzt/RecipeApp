@@ -11,4 +11,5 @@
     <color name="LogInButton">#83B05D</color>
     <color name="checkBoxTextView">#666666</color>
     <color name="checkBox">#F6F6F6</color>
+    <color name="FoodListPicturesBackground">#FFF8EE</color>
 </resources>
