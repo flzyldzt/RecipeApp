@@ -2,10 +2,7 @@ package com.example.yemektarifiapp;
 
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,56 +14,46 @@ import android.widget.TextView;
 public class LogInFragment extends Fragment {
 
     View view;
-    TextView textViewLogInLogo, textViewForgotPasswordLogIn;
-    EditText editTextNameLogIn, editTextPasswordLogIn;
+    TextView tvLogInLogo, tvForgotPasswordLogIn;
+    EditText etNameLogIn, etPasswordLogIn;
     Button buttonLogIn, buttonSignUp;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup parent,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_log_in, parent, false);
         defineLogInViews();
+        onClick();
         return view;
-        //button2 = view.findViewById(R.id.buttonLogInSignUp);
-        //button2.setOnClickListener(v -> transitionFromLoginToSignUp(v));
-        //forgotPassword = view.findViewById(R.id.forgotPasswordLogIn);
-        //forgotPassword.setOnClickListener(v -> transitionFromLoginToReset(v));
     }
 
     public void defineLogInViews() {
-        textViewLogInLogo = view.findViewById(R.id.textViewLogInLogo);
-        editTextNameLogIn = view.findViewById(R.id.editTextLogInName);
-        editTextPasswordLogIn = view.findViewById(R.id.editTextLogInPassword);
+        tvLogInLogo = view.findViewById(R.id.tvLogInLogo);
+        etNameLogIn = view.findViewById(R.id.etLogInName);
+        etPasswordLogIn = view.findViewById(R.id.etLogInPassword);
         buttonLogIn = view.findViewById(R.id.buttonLogIn);
-
         buttonSignUp = view.findViewById(R.id.buttonLogInSignUp);
-        buttonSignUp.setOnClickListener(v -> transitionFromLoginToSignUp());
+        buttonLogIn = view.findViewById(R.id.buttonLogIn);
+        tvForgotPasswordLogIn = view.findViewById(R.id.tvForgotPasswordLogIn);
+    }
 
-        textViewForgotPasswordLogIn = view.findViewById(R.id.forgotPasswordLogIn);
-        textViewForgotPasswordLogIn.setOnClickListener(v -> transitionFromLoginToReset());
+    public void onClick() {
+        buttonSignUp.setOnClickListener(v -> transitionFromLoginToSignUp());
+        buttonLogIn.setOnClickListener(v -> transitionFromLogInToCategories());
+        tvForgotPasswordLogIn.setOnClickListener(v -> transitionFromLoginToReset());
     }
 
     public void transitionFromLoginToSignUp() {
-        /*SignUpFragment signUpFragment = new SignUpFragment();
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.main_Activity, signUpFragment, "Fragment 2");
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();*/
-
         ChangeFragment changeFragment = new ChangeFragment(getContext());
         changeFragment.change(new SignUpFragment());
     }
 
     public void transitionFromLoginToReset() {
-        /*PasswordReset passwordReset = new PasswordReset();
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.main_Activity,passwordReset,"Fragment 3");
-        fragmentTransaction.addToBackStack(null);
-        fragmentTransaction.commit();*/
-
         ChangeFragment changeFragment = new ChangeFragment(getContext());
-        changeFragment.change(new PasswordReset());
+        changeFragment.change(new PasswordResetFragment());
+    }
+
+    public void transitionFromLogInToCategories() {
+        ChangeFragment changeFragment = new ChangeFragment(getContext());
+        changeFragment.change(new RecipeCategoriesFragment());
     }
 }

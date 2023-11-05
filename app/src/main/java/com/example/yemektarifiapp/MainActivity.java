@@ -14,11 +14,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*LogInFragment logInFragment = new LogInFragment();
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.main_Activity, logInFragment, "Fragment 1");
-        fragmentTransaction.commit();*/
+        changeFragment(savedInstanceState);
+    }
+
+    private void changeFragment(Bundle savedInstanceState) {
 
         ChangeFragment changeFragment = new ChangeFragment(MainActivity.this);
         if (savedInstanceState == null) {

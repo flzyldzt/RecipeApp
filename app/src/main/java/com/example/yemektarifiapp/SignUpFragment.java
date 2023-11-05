@@ -15,36 +15,36 @@ import android.widget.TextView;
 public class SignUpFragment extends Fragment {
 
     View view;
-    TextView textViewSignUpLogo, textViewCheckBox, textViewForgotPasswordSignUp;
-    EditText editTextSignUpName, editTextSignUpEmail, editTextSignUpPassword;
-    CheckBox checkBoxSignUp;
+    TextView tvSignUpLogo, tvCheckBox, tvForgotPasswordSignUp;
+    EditText etSignUpName, etSignUpEmail, etSignUpPassword;
+    CheckBox cbSignUp;
     Button buttonSignUp;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_sign_up, container, false);
-
         defineSignUpViews();
-
+        onClick();
         return view;
     }
 
     public void defineSignUpViews() {
-        textViewSignUpLogo = view.findViewById(R.id.textViewSignUpLogo);
-        textViewCheckBox = view.findViewById(R.id.checkBoxText);
-        editTextSignUpName = view.findViewById(R.id.editTextSignUpName);
-        editTextSignUpEmail = view.findViewById(R.id.editTextSignUpEmail);
-        editTextSignUpPassword = view.findViewById(R.id.editTextSignUpPassword);
-        checkBoxSignUp = view.findViewById(R.id.checkBoxSignUp);
+        tvSignUpLogo = view.findViewById(R.id.tvSignUpLogo);
+        tvCheckBox = view.findViewById(R.id.cbText);
+        etSignUpName = view.findViewById(R.id.etSignUpName);
+        etSignUpEmail = view.findViewById(R.id.etSignUpEmail);
+        etSignUpPassword = view.findViewById(R.id.etSignUpPassword);
+        cbSignUp = view.findViewById(R.id.cbSignUp);
         buttonSignUp = view.findViewById(R.id.buttonSignUp);
+        tvForgotPasswordSignUp = view.findViewById(R.id.tvForgotPasswordSignUp);
+    }
 
-        textViewForgotPasswordSignUp = view.findViewById(R.id.forgotPasswordSignUp);
-        textViewForgotPasswordSignUp.setOnClickListener(v -> transitionFromSignUpToReset());
+    public void onClick() {
+        tvForgotPasswordSignUp.setOnClickListener(v -> transitionFromSignUpToReset());
     }
 
     public void transitionFromSignUpToReset() {
         ChangeFragment changeFragment = new ChangeFragment(getContext());
-        changeFragment.change(new PasswordReset());
+        changeFragment.change(new PasswordResetFragment());
     }
 }

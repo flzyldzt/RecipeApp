@@ -7,18 +7,17 @@
     tools:context=".SignUpFragment">
 
     <TextView
-        android:id="@+id/textViewSignUpLogo"
+        android:id="@+id/tvSignUpLogo"
         android:layout_width="141dp"
         android:layout_height="54dp"
         android:layout_marginStart="133dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="129dp"
-        android:text="@string/textViewSignUpLogo"
+        android:text="@string/tw_sign_up_title"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textIsSelectable="false"
-        android:textSize="40sp"
+        android:textSize="@dimen/text_size_40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.7"
@@ -26,7 +25,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextSignUpName"
+        android:id="@+id/etSignUpName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -34,20 +33,20 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/rounder"
         android:ems="10"
-        android:hint="@string/editTextNameHint"
+        android:hint="@string/et_name_hint"
         android:inputType="text"
         android:paddingStart="16dp"
         android:paddingTop="16dp"
         android:paddingEnd="282dp"
         android:paddingBottom="15dp"
-        android:textColorHint="@color/LogInPageEditTextBackGround"
+        android:textColorHint="@color/log_in_et_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewSignUpLogo" />
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUpLogo" />
 
     <EditText
-        android:id="@+id/editTextSignUpEmail"
+        android:id="@+id/etSignUpEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -55,19 +54,19 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/rounder"
         android:ems="10"
-        android:hint="@string/editTextEmailHint"
+        android:hint="@string/et_email_hint"
         android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingTop="16dp"
         android:paddingEnd="282dp"
         android:paddingBottom="15dp"
-        android:textColorHint="@color/LogInPageEditTextBackGround"
+        android:textColorHint="@color/log_in_et_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpName" />
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpName" />
 
     <EditText
-        android:id="@+id/editTextSignUpPassword"
+        android:id="@+id/etSignUpPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -75,42 +74,42 @@
         android:layout_marginEnd="16dp"
         android:background="@drawable/rounder"
         android:ems="10"
-        android:hint="@string/editTextPasswordHint"
+        android:hint="@string/et_password_hint"
         android:inputType="textPassword"
         android:paddingStart="16dp"
         android:paddingTop="16dp"
         android:paddingEnd="252dp"
         android:paddingBottom="15dp"
-        android:textColorHint="@color/LogInPageEditTextBackGround"
+        android:textColorHint="@color/log_in_et_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpEmail" />
 
     <CheckBox
-        android:id="@+id/checkBoxSignUp"
+        android:id="@+id/cbSignUp"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
-        android:background="@color/checkBox"
+        android:background="@color/cb_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpPassword" />
 
     <TextView
-        android:id="@+id/checkBoxText"
+        android:id="@+id/cbText"
         android:layout_width="315dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:text="@string/checkBoxText"
-        android:textColor="@color/checkBoxTextView"
+        android:text="@string/cb_text"
+        android:textColor="@color/cb_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
-        app:layout_constraintStart_toEndOf="@+id/checkBoxSignUp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSignUpPassword" />
+        app:layout_constraintStart_toEndOf="@+id/cbSignUp"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpPassword" />
 
     <Button
         android:id="@+id/buttonSignUp"
@@ -121,25 +120,25 @@
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="256dp"
         android:background="@drawable/button_background"
-        android:text="@string/buttonSignUp"
+        android:text="@string/button_sign_up"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxText"
+        app:layout_constraintTop_toBottomOf="@+id/cbText"
         app:layout_constraintVertical_bias="0.671" />
 
     <TextView
-        android:id="@+id/forgotPasswordSignUp"
+        android:id="@+id/tvForgotPasswordSignUp"
         android:layout_width="196dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="98dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="99dp"
-        android:text="@string/textViewForgotPassword"
+        android:text="@string/tw_forgot_password"
         android:textAlignment="center"
-        android:textColor="@color/LogInButton"
-        android:textSize="16sp"
+        android:textColor="@color/button_background"
+        android:textSize="@dimen/text_size_16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -147,6 +146,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonSignUp"
         app:layout_constraintVertical_bias="0.063" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,24 +11,23 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class PasswordReset extends Fragment {
+public class PasswordResetFragment extends Fragment {
 
     View view;
-    TextView textViewResetPassword;
-    EditText editTextResetPassword;
+    TextView tvResetPassword;
+    EditText etResetPassword;
     Button buttonResetPassword;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_password_reset, container, false);
         definePasswordResetViews();
         return view;
     }
 
     public void definePasswordResetViews() {
-        textViewResetPassword = view.findViewById(R.id.textViewResetPassword);
-        editTextResetPassword = view.findViewById(R.id.editTextResetPassword);
-        buttonResetPassword = view.findViewById(R.id.buttonReSetPassword);
+        tvResetPassword = view.findViewById(R.id.tvResetPassword);
+        etResetPassword = view.findViewById(R.id.etResetPassword);
+        buttonResetPassword = view.findViewById(R.id.buttonResetPassword);
     }
 }

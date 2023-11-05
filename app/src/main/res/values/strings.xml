@@ -1,20 +1,23 @@
 <resources>
+
     <string name="app_name">YemekTarifiApp</string>
-    <string name="editTextNameHint">Name</string>
-    <string name="editTextPasswordHint">Password</string>
-    <string name="textViewLogInLogo">Log In</string>
-    <string name="buttonLogIn">Log In</string>
-    <string name="textViewForgotPassword">Forgot your password?</string>
-    <string name="textViewSignUpLogo">Sign Up</string>
-    <string name="editTextEmailHint">Email</string>
-    <string name="checkBoxText">I would like to receive your newsletter and other promotional information.</string>
-    <string name="buttonSignUp">SIGN UP</string>
-    <string name="buttonSend">Send</string>
-    <string name="textViewFoodListLogo">Food List</string>
-    <string name="textViewDessert">DESSERTS</string>
-    <string name="textViewSoup">SOUPS</string>
-    <string name="textViewSalad">SALADS</string>
-    <string name="textViewLegumes">LEGUMES</string>
-    <string name="textViewVegetable">VEGETABLES</string>
-    <string name="textViewMeat">MEAT</string>
+    <string name="et_name_hint">Name</string>
+    <string name="et_password_hint">Password</string>
+    <string name="et_email_hint">Email</string>
+    <string name="button_log_in">Log In</string>
+    <string name="button_sign_up">SIGN UP</string>
+    <string name="button_send">Send</string>
+    <string name="tw_food_list_title">Food List</string>
+    <string name="tw_dessert_title">DESSERTS</string>
+    <string name="tw_soup_title">SOUPS</string>
+    <string name="tw_salad_title">SALADS</string>
+    <string name="tw_legumes_title">LEGUMES</string>
+    <string name="tw_vegetable_title">VEGETABLES</string>
+    <string name="tw_meat_title">MEAT</string>
+    <string name="tw_log_in_title">Log In</string>
+    <string name="tw_forgot_password">Forgot your password?</string>
+    <string name="tw_sign_up_title">Sign Up</string>
+    <string name="tv_categories_title">Categories</string>
+    <string name="cb_text">I would like to receive your newsletter and other promotional information.</string>
+
 </resources>
