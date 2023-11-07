@@ -19,5 +19,6 @@
     <string name="tw_sign_up_title">Sign Up</string>
     <string name="tv_categories_title">Categories</string>
     <string name="cb_text">I would like to receive your newsletter and other promotional information.</string>
-
+    <string name="tv_cl_title_milky_desserts">Milky Desserts Recipes</string>
+    <string name="tv_cl_title_cake_recipes">Cake Recipes</string>
 </resources>
