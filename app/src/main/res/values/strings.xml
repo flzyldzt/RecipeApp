@@ -1,24 +1,23 @@
 <resources>
 
     <string name="app_name">YemekTarifiApp</string>
-    <string name="et_name_hint">Name</string>
-    <string name="et_password_hint">Password</string>
-    <string name="et_email_hint">Email</string>
-    <string name="button_log_in">Log In</string>
-    <string name="button_sign_up">SIGN UP</string>
-    <string name="button_send">Send</string>
-    <string name="tw_food_list_title">Food List</string>
-    <string name="tw_dessert_title">DESSERTS</string>
-    <string name="tw_soup_title">SOUPS</string>
-    <string name="tw_salad_title">SALADS</string>
-    <string name="tw_legumes_title">LEGUMES</string>
-    <string name="tw_vegetable_title">VEGETABLES</string>
-    <string name="tw_meat_title">MEAT</string>
-    <string name="tw_log_in_title">Log In</string>
-    <string name="tw_forgot_password">Forgot your password?</string>
-    <string name="tw_sign_up_title">Sign Up</string>
-    <string name="tv_categories_title">Categories</string>
+    <string name="et_name">Name</string>
+    <string name="et_password">Password</string>
+    <string name="et_email">Email</string>
+    <string name="btn_log_in">Log In</string>
+    <string name="btn_sign_up">SIGN UP</string>
+    <string name="btn_send">Send</string>
+    <string name="tv_food_list">Food List</string>
+    <string name="tv_dessert">DESSERTS</string>
+    <string name="tv_soup">SOUPS</string>
+    <string name="tv_salad">SALADS</string> <!--TODO : düzeltılecek tv-->
+    <string name="tv_legumes">LEGUMES</string>
+    <string name="tv_vegetable">VEGETABLES</string>
+    <string name="tv_meat">MEAT</string>
+    <string name="tv_log_in">Log In</string>
+    <string name="tv_forgot_password">Forgot your password?</string>
+    <string name="tv_sign_up">Sign Up</string>
+    <string name="tv_categories">Categories</string>
     <string name="cb_text">I would like to receive your newsletter and other promotional information.</string>
-    <string name="tv_cl_title_milky_desserts">Milky Desserts Recipes</string>
-    <string name="tv_cl_title_cake_recipes">Cake Recipes</string>
+
 </resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clDetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/food_list_pictures_background">
+
+    <ImageView
+        android:id="@+id/ivSubListPicture"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_margin="@dimen/margin_12dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:src="@drawable/firin_sutlac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubListRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSubListPicture" />
+
+    <TextView
+        android:id="@+id/tvSubListMaterials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_12dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubListRecipe" />
+
+    <TextView
+        android:id="@+id/tvSubListCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubListMaterials" />
+
+    <TextView
+        android:id="@+id/tvSubListPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_12dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toEndOf="@+id/tvSubListCalorie"
+        app:layout_constraintTop_toBottomOf="@+id/tvSubListMaterials" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

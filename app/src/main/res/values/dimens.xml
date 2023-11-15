@@ -5,14 +5,23 @@
     <dimen name="text_size_18sp">18sp</dimen>
     <dimen name="text_size_16sp">16sp</dimen>
     <dimen name="text_size_14sp">14sp</dimen>
+
+    <!--Margin,Padding,TextSize:2,4,8,10,12,16,20,24,36,64-->
     <dimen name="margin_12dp">12dp</dimen>
     <dimen name="margin_5dp">5dp</dimen>
     <dimen name="margin_10dp">10dp</dimen>
     <dimen name="margin_16dp">16dp</dimen>
     <dimen name="margin_20dp">20dp</dimen>
     <dimen name="margin_30dp">30dp</dimen>
+
     <dimen name="radius_50dp">50dp</dimen>
     <dimen name="radius_40dp">40dp</dimen>
     <dimen name="radius_10dp">10dp</dimen>
     <dimen name="padding_3dp">3dp</dimen>
+
+    <!--Radius : 2,4,8,10-->
+
+    <!--Spacing-->
+    <dimen name="spacing_10dp">50</dimen>
+
 </resources>

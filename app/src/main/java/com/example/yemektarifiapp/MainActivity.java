@@ -1,11 +1,11 @@
 package com.example.yemektarifiapp;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+
+import com.example.yemektarifiapp.authentication.LogInFragment;
+import com.example.yemektarifiapp.util.ChangeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
