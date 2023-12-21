@@ -39,12 +39,7 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
 
         holder.tvCategoryText.setText(model.getTitle());
         holder.ivCategoryPictures.setImageResource(model.getImageId());
-        holder.clCategory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                categoryInterface.onItemClick(list.get(position), position);
-            }
-        });
+        holder.clCategory.setOnClickListener(v -> categoryInterface.onItemClick(list.get(position), position));
     }
 
     @Override

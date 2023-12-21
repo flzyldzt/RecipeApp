@@ -60,8 +60,6 @@ public class SubCategoryFragment extends Fragment implements SubCategoryInterfac
         }
     }
 
-
-
     /*
     public ArrayList<RecipeCategoriesSubListModel> getList() {
 
@@ -76,10 +74,7 @@ public class SubCategoryFragment extends Fragment implements SubCategoryInterfac
         return list;
     }*/
 
-
-
     public void onClick() {
-
         /*Detail ekranını liste ıcınden tıklanan verının detay bılgılerını göndereeceksın dıger fragment'a*/
     }
 

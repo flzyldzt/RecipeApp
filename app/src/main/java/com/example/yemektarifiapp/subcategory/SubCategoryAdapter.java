@@ -40,14 +40,7 @@ public class SubCategoryAdapter extends RecyclerView.Adapter<SubCategoryAdapter.
 
         holder.tvSubCategoryText.setText(model.getTitle());
         holder.ivSubCategoryPicture.setImageResource(model.getImageId());
-        holder.clCategorySub.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                subCategoryInterface.onItemClick(list.get(position), position);
-            }
-        });
-
-
+        holder.clCategorySub.setOnClickListener(v -> subCategoryInterface.onItemClick(list.get(position), position));
     }
 
     @Override
