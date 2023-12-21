@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/clDetail"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/food_list_pictures_background">
+    android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/ivSubListPicture"
+        android:id="@+id/ivDetailPicture"
         android:layout_width="0dp"
         android:layout_height="250dp"
         android:layout_margin="@dimen/margin_12dp"
@@ -20,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvSubListRecipe"
+        android:id="@+id/tvDetailRecipe"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_12dp"
@@ -30,10 +28,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ivSubListPicture" />
+        app:layout_constraintTop_toBottomOf="@+id/ivDetailPicture" />
 
     <TextView
-        android:id="@+id/tvSubListMaterials"
+        android:id="@+id/tvDetailMaterial"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_12dp"
@@ -44,10 +42,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSubListRecipe" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailRecipe" />
 
     <TextView
-        android:id="@+id/tvSubListCalorie"
+        android:id="@+id/tvDetailCalorie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_12dp"
@@ -56,10 +54,10 @@
         android:textSize="@dimen/text_size_18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSubListMaterials" />
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailMaterial" />
 
     <TextView
-        android:id="@+id/tvSubListPerson"
+        android:id="@+id/tvDetailPerson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin_12dp"
@@ -69,8 +67,8 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.98"
-        app:layout_constraintStart_toEndOf="@+id/tvSubListCalorie"
-        app:layout_constraintTop_toBottomOf="@+id/tvSubListMaterials" />
+        app:layout_constraintStart_toEndOf="@+id/tvDetailCalorie"
+        app:layout_constraintTop_toBottomOf="@+id/tvDetailMaterial" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.yemektarifiapp.R;
@@ -56,11 +55,11 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailHold
 
         public DetailHolder(@NonNull View itemView) {
             super(itemView);
-            ivSubListPicture = itemView.findViewById(R.id.ivSubListPicture);
-            tvSubListRecipe = itemView.findViewById(R.id.tvSubListRecipe);
-            tvSubListMaterials = itemView.findViewById(R.id.tvSubListMaterials);
-            tvSubListCalorie = itemView.findViewById(R.id.tvSubListCalorie);
-            tvSubListPerson = itemView.findViewById(R.id.tvSubListPerson);
+            ivSubListPicture = itemView.findViewById(R.id.ivDetailPicture);
+            tvSubListRecipe = itemView.findViewById(R.id.tvDetailRecipe);
+            tvSubListMaterials = itemView.findViewById(R.id.tvDetailMaterial);
+            tvSubListCalorie = itemView.findViewById(R.id.tvDetailCalorie);
+            tvSubListPerson = itemView.findViewById(R.id.tvDetailPerson);
         }
     }
 }

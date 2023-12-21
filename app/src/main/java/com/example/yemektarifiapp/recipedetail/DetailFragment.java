@@ -45,11 +45,11 @@ public class DetailFragment extends Fragment {
     }
 
     public void initViews() {
-        ivSubListPicture = view.findViewById(R.id.ivSubListPicture);
-        tvSubListRecipe = view.findViewById(R.id.tvSubListRecipe);
-        tvSubListMaterials = view.findViewById(R.id.tvSubListMaterials);
-        tvSubListCalorie = view.findViewById(R.id.tvSubListCalorie);
-        tvSubListPerson = view.findViewById(R.id.tvSubListPerson);
+        ivSubListPicture = view.findViewById(R.id.ivDetailPicture);
+        tvSubListRecipe = view.findViewById(R.id.tvDetailRecipe);
+        tvSubListMaterials = view.findViewById(R.id.tvDetailMaterial);
+        tvSubListCalorie = view.findViewById(R.id.tvDetailCalorie);
+        tvSubListPerson = view.findViewById(R.id.tvDetailPerson);
     }
 
     private void setViewParams() {
