@@ -60,20 +60,6 @@ public class SubCategoryFragment extends Fragment implements SubCategoryInterfac
         }
     }
 
-    /*
-    public ArrayList<RecipeCategoriesSubListModel> getList() {
-
-        list = new ArrayList<>();
-        DummyListGenerator listGenerator = new DummyListGenerator();
-
-        list.add(new RecipeCategoriesSubListModel(SubCategoryMenuIds.FIRIN_SÜTLAC,"Fırın Sütlaç",R.drawable.firin_sutlac,listGenerator.getDessertList()));
-        list.add(new RecipeCategoriesSubListModel(SubCategoryMenuIds.MAGNOLİA,"Magnolia", R.drawable.magnolia, listGenerator.getSoupList()));
-        list.add(new RecipeCategoriesSubListModel(SubCategoryMenuIds.ASURE,"Aşure", R.drawable.asure, listGenerator.getSaladList()));
-        list.add(new RecipeCategoriesSubListModel(SubCategoryMenuIds.VİSNELİ_CHEESECAKE,"Vişneli Cheesecake", R.drawable.visneli_cheesecake, listGenerator.getLegumeList()));
-        list.add(new RecipeCategoriesSubListModel(SubCategoryMenuIds.GÜLLAC,"Güllaç", R.drawable.gullac, listGenerator.getVegetableList()));
-        return list;
-    }*/
-
     public void onClick() {
         /*Detail ekranını liste ıcınden tıklanan verının detay bılgılerını göndereeceksın dıger fragment'a*/
     }
