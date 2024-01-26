@@ -7,8 +7,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.yemektarifiapp.R;
@@ -19,19 +17,15 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailHold
 
     private List<DetailModel> list;
 
-    private DetailInterface detailInterface;
-
-
-    public DetailAdapter(List<DetailModel> list, DetailInterface detailInterface) {
+    public DetailAdapter(List<DetailModel> list) {
         this.list = list;
-        this.detailInterface = detailInterface;
     }
 
     @NonNull
     @Override
     public DetailHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_sub_detail, parent, false);
-        return new DetailHolder(view, detailInterface);
+        return new DetailHolder(view);
     }
 
     @Override
@@ -43,7 +37,6 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailHold
         //holder.tvSubListMaterials.setText(detailModel.getMaterial());
         holder.tvSubListCalorie.setText(detailModel.getCalorie());
         holder.tvSubListPerson.setText(detailModel.getPerson());
-        holder.clDetail.setOnClickListener(v -> detailInterface.onItemClick(list.get(position), position));
 
     }
 
@@ -55,20 +48,15 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailHold
     public class DetailHolder extends RecyclerView.ViewHolder {
 
         private ImageView ivSubListPicture;
-        private TextView tvSubListRecipe, tvSubListMaterials, tvSubListCalorie, tvSubListPerson;
-        public ConstraintLayout clDetail;
-        private CardView cardViewDetail;
+        private TextView  tvSubListCalorie, tvSubListPerson;
 
-
-        public DetailHolder(@NonNull View itemView, DetailInterface selectDetailInterface) {
+        public DetailHolder(@NonNull View itemView) {
             super(itemView);
             ivSubListPicture = itemView.findViewById(R.id.ivDetailPicture);
-            tvSubListRecipe = itemView.findViewById(R.id.tvDetailRecipe);
-            tvSubListMaterials = itemView.findViewById(R.id.tvDetailMaterial);
+           // tvSubListRecipe = itemView.findViewById(R.id.tvDetailRecipe);
+            //tvSubListMaterials = itemView.findViewById(R.id.tvDetailMaterial);
             tvSubListCalorie = itemView.findViewById(R.id.tvDetailCalorie);
             tvSubListPerson = itemView.findViewById(R.id.tvDetailPerson);
-            clDetail = itemView.findViewById(R.id.clDetail);
-            cardViewDetail = itemView.findViewById(R.id.cardViewDetail);
         }
     }
 }

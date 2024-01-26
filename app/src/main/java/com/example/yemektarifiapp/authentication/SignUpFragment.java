@@ -18,6 +18,7 @@ import com.example.yemektarifiapp.R;
 public class SignUpFragment extends Fragment {
 
     View view;
+
     TextView tvSignUpLogo, tvCheckBox, tvForgotPasswordSignUp;
     EditText etSignUpName, etSignUpEmail, etSignUpPassword;
     CheckBox cbSignUp;

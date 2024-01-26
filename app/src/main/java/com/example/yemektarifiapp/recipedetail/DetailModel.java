@@ -6,7 +6,6 @@ public class DetailModel implements Serializable {
 
     private int imageId;
     private String calorie, person;
-    //recipe, material
 
     public DetailModel(int imageId, String calorie, String person) {
         this.imageId = imageId;
@@ -32,7 +31,7 @@ public class DetailModel implements Serializable {
         this.recipe = recipe;
     }*/
 
-   /* public String getMaterial() {
+   /*public String getMaterial() {
         return material;
     }*/
 
