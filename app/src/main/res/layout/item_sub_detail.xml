@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clDetail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/clDetail"
     android:layout_marginHorizontal="@dimen/margin_16dp"
     android:layout_marginTop="@dimen/margin_20dp">
 
@@ -18,8 +18,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/clDetail2"
             android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/ivDetailPicture"
@@ -37,15 +36,13 @@
                 android:id="@+id/tvDetailPerson"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_12dp"
-                android:gravity="start"
-                android:padding="@dimen/padding_12dp"
+                android:layout_marginTop="@dimen/margin_30dp"
                 android:text="@string/cv_person"
                 android:textColor="@color/cb_text_color"
                 android:textSize="@dimen/text_size_16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ivDetailPicture" />
 
@@ -53,16 +50,15 @@
                 android:id="@+id/tvDetailCalorie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="start"
-                android:padding="@dimen/padding_12dp"
+                android:layout_marginBottom="@dimen/margin_30dp"
                 android:text="@string/cv_calorie"
                 android:textColor="@color/cb_text_color"
                 android:textSize="@dimen/text_size_16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.054"
-                app:layout_constraintStart_toStartOf="@+id/ivDetailPicture"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvDetailPerson" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

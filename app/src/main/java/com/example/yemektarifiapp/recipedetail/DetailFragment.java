@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.example.yemektarifiapp.R;
 
-public class DetailFragment extends Fragment {
+public class DetailFragment extends Fragment implements DetailInterface{
 
     View view;
 
@@ -54,11 +54,15 @@ public class DetailFragment extends Fragment {
 
     private void setViewParams() {
         ivSubListPicture.setImageResource(detail.getImageId());
-        tvSubListRecipe.setText(detail.getRecipe());
-        tvSubListMaterials.setText(detail.getMaterial());
+        //tvSubListRecipe.setText(detail.getRecipe());
+        //tvSubListMaterials.setText(detail.getMaterial());
         tvSubListCalorie.setText(detail.getCalorie());
         tvSubListPerson.setText(detail.getPerson());
     }
 
 
+    @Override
+    public void onItemClick(DetailModel detailModel, int position) {
+
+    }
 }

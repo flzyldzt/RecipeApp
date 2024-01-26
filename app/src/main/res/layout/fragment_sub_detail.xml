@@ -16,13 +16,12 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="400dp"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/ivDetailPicture"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="350dp"
                 android:src="@drawable/firin_sutlac"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -35,15 +34,13 @@
                 android:id="@+id/tvDetailPerson"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/margin_12dp"
-                android:gravity="start"
-                android:padding="@dimen/padding_12dp"
+                android:layout_marginTop="32dp"
                 android:text="@string/cv_person"
                 android:textColor="@color/cb_text_color"
                 android:textSize="@dimen/text_size_16sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ivDetailPicture" />
 
@@ -51,15 +48,14 @@
                 android:id="@+id/tvDetailCalorie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="start"
-                android:padding="@dimen/padding_12dp"
+                android:layout_marginBottom="@dimen/margin_30dp"
                 android:text="@string/cv_calorie"
                 android:textColor="@color/cb_text_color"
                 android:textSize="@dimen/text_size_16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/ivDetailPicture"
                 app:layout_constraintTop_toBottomOf="@+id/tvDetailPerson" />
 
@@ -88,7 +84,7 @@
         android:id="@+id/tvDetailMaterial"
         android:layout_width="match_parent"
         android:layout_height="54dp"
-        android:layout_marginTop="212dp"
+        android:layout_marginTop="164dp"
         android:background="@drawable/background_btn"
         android:gravity="center"
         android:text="@string/cv_materials"
