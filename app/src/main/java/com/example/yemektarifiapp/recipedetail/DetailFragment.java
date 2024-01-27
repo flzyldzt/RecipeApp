@@ -19,15 +19,11 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 public class DetailFragment extends Fragment {
 
     View view;
-
     DetailModel detail;
-
     private ImageView ivSubListPicture;
-    private TextView  tvSubListCalorie, tvSubListPerson;
+    private TextView tvSubListCalorie, tvSubListPerson;
     public Button btnDetailMaterial, btnDetailRecipe;
-
-    public BottomSheetDialog bottomSheetDialog;
-
+    public BottomSheetDialog bottomSheetDialogMaterial, bottomSheetDialogRecipe;
     public static final String RECIPE_DETAIL_MODEL_KEY = "detail";
 
     @Override
@@ -43,7 +39,8 @@ public class DetailFragment extends Fragment {
         initArguments();
         initViews();
         setViewParams();
-        onClick();
+        onClickMaterial();
+        onClickRecipe();
         return view;
     }
 
@@ -67,24 +64,48 @@ public class DetailFragment extends Fragment {
         tvSubListPerson.setText(detail.getPerson());
     }
 
-
-    private void onClick(){
+    private void onClickMaterial() {
         btnDetailMaterial.setOnClickListener(v -> {
-            createDialog();
+            createDialogMaterialDescription();
         });
-
     }
 
-    private void createDialog(){
-        bottomSheetDialog = new BottomSheetDialog(requireContext());
+    private void onClickRecipe() {
+        btnDetailRecipe.setOnClickListener(v -> {
+            createDialogRecipeDescription();
+        });
+    }
 
-        View bottomView = getLayoutInflater().inflate(R.layout.layout_bottom_sheet_dialog, null, false);
+    private void createDialogMaterialDescription() {
+        bottomSheetDialogMaterial = new BottomSheetDialog(requireContext());
+
+        View bottomView = getLayoutInflater().inflate(R.layout.layout_bottom_sheet_dialog_material, null, false);
 
         TextView tvMaterialDescription = bottomView.findViewById(R.id.tvMaterialDescription);
-        tvMaterialDescription.setText("açıklama metni");
-        bottomSheetDialog.setContentView(bottomView);
-        bottomSheetDialog.show();
+        tvMaterialDescription.setText(detail.getMaterial());
 
+        Button btnClose = bottomView.findViewById(R.id.btnClose);
+        btnClose.setOnClickListener(v -> {
+            bottomSheetDialogMaterial.dismiss();
+        });
 
+        bottomSheetDialogMaterial.setContentView(bottomView);
+        bottomSheetDialogMaterial.show();
+    }
+
+    private void createDialogRecipeDescription() {
+        bottomSheetDialogRecipe = new BottomSheetDialog(requireContext());
+        View bottomView = getLayoutInflater().inflate(R.layout.layout_bottom_sheet_dialog_recipe, null, false);
+
+        TextView tvRecipeDescription = bottomView.findViewById(R.id.tvRecipeDescription);
+        tvRecipeDescription.setText(detail.getRecipe());
+
+        Button btnClose = bottomView.findViewById(R.id.btnClose);
+        btnClose.setOnClickListener(v -> {
+            bottomSheetDialogRecipe.dismiss();
+        });
+
+        bottomSheetDialogRecipe.setContentView(bottomView);
+        bottomSheetDialogRecipe.show();
     }
 }

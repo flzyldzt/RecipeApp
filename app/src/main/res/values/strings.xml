@@ -19,8 +19,17 @@
     <string name="tv_sign_up">Sign Up</string>
     <string name="tv_categories">Categories</string>
     <string name="cb_text">I would like to receive your newsletter and other promotional information.</string>
-    <string name="cv_recipe">RECIPE</string>
-    <string name="cv_materials">MATERIALS</string>
-    <string name="cv_calorie">CALORIE</string>
-    <string name="cv_person">PERSON</string>
+    <string name="tv_calorie">CALORIE</string>
+    <string name="tv_person">PERSON</string>
+    <string name="tv_recipe">RECIPE</string>
+    <string name="tv_materials">MATERIAL</string>
+    <string name="tv_material_gullac">12 yaprak güllaç
+        1,5 litre süt
+        2 su bardağı şeker
+        Çekilmiş ceviz
+        2 yemek kaşığı gül suyu (isteğe göre)
+
+        Üzeri için:
+        Toz Antep fıstığı
+        Kiraz şekerlemesi</string>
 </resources>

@@ -5,12 +5,13 @@ import java.io.Serializable;
 public class DetailModel implements Serializable {
 
     private int imageId;
-    private String calorie, person;
+    private String calorie, person, material, recipe;
 
-    public DetailModel(int imageId, String calorie, String person) {
+
+    public DetailModel(int imageId, String calorie, String person, String material, String recipe) {
         this.imageId = imageId;
-        //this.recipe = recipe;
-        //this.material = material;
+        this.recipe = recipe;
+        this.material = material;
         this.calorie = calorie;
         this.person = person;
     }
@@ -23,21 +24,21 @@ public class DetailModel implements Serializable {
         this.imageId = imageId;
     }
 
-    /*public String getRecipe() {
+    public String getRecipe() {
         return recipe;
-    }*/
+    }
 
-    /*public void setRecipe(String recipe) {
+    public void setRecipe(String recipe) {
         this.recipe = recipe;
-    }*/
+    }
 
-   /*public String getMaterial() {
+    public String getMaterial() {
         return material;
-    }*/
+    }
 
-    /*public void setMaterial(String material) {
+    public void setMaterial() {
         this.material = material;
-    }*/
+    }
 
     public String getCalorie() {
         return calorie;
