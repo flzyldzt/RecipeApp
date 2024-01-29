@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.yemektarifiapp.databinding.FragmentSubCategoryBinding;
 import com.example.yemektarifiapp.recipedetail.DetailFragment;
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.util.ChangeFragment;
@@ -21,12 +22,10 @@ import com.example.yemektarifiapp.util.ChangeFragment;
 import java.util.ArrayList;
 
 public class SubCategoryFragment extends Fragment implements SubCategoryInterface {
-    View view;
-    RecyclerView recyclerView;
-    TextView tvFoodsLogo;
+
+    private FragmentSubCategoryBinding binding;
+
     ArrayList subList;
-
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,32 +35,22 @@ public class SubCategoryFragment extends Fragment implements SubCategoryInterfac
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_sub_category, container, false);
-        initViews();
+        binding = FragmentSubCategoryBinding.inflate(inflater, container, false);
         initAdapter();
-        return view;
+        return binding.getRoot();
     }
 
     private void initArguments() {
         subList = (ArrayList) requireArguments().getSerializable("list");
     }
 
-    public void initViews() {
-        recyclerView = view.findViewById(R.id.recyclerView);
-        tvFoodsLogo = view.findViewById(R.id.tvFoodsLogo);
-    }
-
     public void initAdapter() {
         if (!subList.isEmpty()) {
             SubCategoryAdapter adapter = new SubCategoryAdapter(subList, this);
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-            recyclerView.setLayoutManager(linearLayoutManager);
-            recyclerView.setAdapter(adapter);
+            binding.recyclerView.setLayoutManager(linearLayoutManager);
+            binding.recyclerView.setAdapter(adapter);
         }
-    }
-
-    public void onClick() {
-        /*Detail ekranını liste ıcınden tıklanan verının detay bılgılerını göndereeceksın dıger fragment'a*/
     }
 
     @Override

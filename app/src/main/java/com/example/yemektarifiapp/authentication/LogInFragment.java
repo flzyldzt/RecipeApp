@@ -2,48 +2,35 @@ package com.example.yemektarifiapp.authentication;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.yemektarifiapp.databinding.FragmentLogInBinding;
 import com.example.yemektarifiapp.util.ChangeFragment;
-import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.category.CategoryFragment;
 
 public class LogInFragment extends Fragment {
 
-    View view;
-    TextView tvLogInLogo, tvForgotPasswordLogIn;
-    EditText etNameLogIn, etPasswordLogIn;
-    Button buttonLogIn, buttonSignUp;
+    private FragmentLogInBinding binding;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup parent, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_log_in, parent, false);
-        defineLogInViews();
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        binding = FragmentLogInBinding.inflate(inflater, container, false);
         onClick();
-        return view;
-    }
-
-    public void defineLogInViews() {
-        tvLogInLogo = view.findViewById(R.id.tvLogInLogo);
-        etNameLogIn = view.findViewById(R.id.etLogInName);
-        etPasswordLogIn = view.findViewById(R.id.etLogInPassword);
-        buttonLogIn = view.findViewById(R.id.buttonLogIn);
-        buttonSignUp = view.findViewById(R.id.buttonLogInSignUp);
-        buttonLogIn = view.findViewById(R.id.buttonLogIn);
-        tvForgotPasswordLogIn = view.findViewById(R.id.tvForgotPasswordLogIn);
+        return binding.getRoot();
     }
 
     public void onClick() {
-        buttonSignUp.setOnClickListener(v -> transitionFromLoginToSignUp());
-        buttonLogIn.setOnClickListener(v -> transitionFromLogInToCategories());
-        tvForgotPasswordLogIn.setOnClickListener(v -> transitionFromLoginToReset());
+        binding.buttonSignUp.setOnClickListener(v -> transitionFromLoginToSignUp());
+        binding.buttonLogIn.setOnClickListener(v -> transitionFromLogInToCategories());
+        binding.tvForgotPasswordLogIn.setOnClickListener(v -> transitionFromLoginToReset());
     }
 
     public void transitionFromLoginToSignUp() {

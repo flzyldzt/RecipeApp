@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.yemektarifiapp.databinding.FragmentCategoryBinding;
 import com.example.yemektarifiapp.util.ChangeFragment;
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.subcategory.SubCategoryFragment;
@@ -22,29 +23,22 @@ import java.util.List;
 
 public class CategoryFragment extends Fragment implements CategoryInterface {
 
-    View view;
-    TextView tvCategoriesLogo;
-    private RecyclerView recyclerView;
+    private FragmentCategoryBinding binding;
+
     ArrayList<CategoryModel> modelArrayList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_category, container, false);
-        initViews();
+        binding = FragmentCategoryBinding.inflate(inflater, container, false);
         initAdapter();
-        return view;
-    }
-
-    public void initViews() {
-        recyclerView = view.findViewById(R.id.recyclerView);
-        tvCategoriesLogo = view.findViewById(R.id.tvCategories);
+        return binding.getRoot();
     }
 
     public void initAdapter() {
         CategoryAdapter adapter = new CategoryAdapter(getList(), this);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
-        recyclerView.setLayoutManager(gridLayoutManager);
-        recyclerView.setAdapter(adapter);
+        binding.recyclerView.setLayoutManager(gridLayoutManager);
+        binding.recyclerView.setAdapter(adapter);
     }
 
     public List<CategoryModel> getList() {

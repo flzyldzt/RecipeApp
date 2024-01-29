@@ -12,24 +12,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.yemektarifiapp.R;
+import com.example.yemektarifiapp.databinding.FragmentPasswordResetBinding;
 
 public class PasswordResetFragment extends Fragment {
 
-    View view;
-    TextView tvResetPassword;
-    EditText etResetPassword;
-    Button buttonResetPassword;
+    private FragmentPasswordResetBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_password_reset, container, false);
-        definePasswordResetViews();
-        return view;
+        binding = FragmentPasswordResetBinding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 
-    public void definePasswordResetViews() {
-        tvResetPassword = view.findViewById(R.id.tvResetPassword);
-        etResetPassword = view.findViewById(R.id.etResetPassword);
-        buttonResetPassword = view.findViewById(R.id.buttonResetPassword);
-    }
 }
