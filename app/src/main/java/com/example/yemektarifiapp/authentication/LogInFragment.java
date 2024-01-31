@@ -26,58 +26,50 @@ public class LogInFragment extends Fragment {
     private static final String USER_INFO_KEY = "userInfoKey";
     private static final String USERNAME_KEY = "usernameKey";
 
-    //private static final String PASSWORD_KEY = "passwordKey";
+    private static final String PASSWORD_KEY = "passwordKey";
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentLogInBinding.inflate(inflater, container, false);
-        checkUserInfo();
         onClick();
         return binding.getRoot();
     }
 
     public void onClick() {
         binding.buttonSignUp.setOnClickListener(v -> transitionFromLoginToSignUp());
-        binding.buttonLogIn.setOnClickListener(v -> transitionFromLogInToCategories());
+        binding.buttonLogIn.setOnClickListener(v -> checkUserInfo());
         binding.tvForgotPasswordLogIn.setOnClickListener(v -> transitionFromLoginToReset());
     }
 
     private void checkUserInfo() {
         sharedPreferences = requireContext().getSharedPreferences(USER_INFO_KEY, MODE_PRIVATE);
+        String username = binding.etLogInName.getText().toString();
+        String password = binding.etLogInPassword.getText().toString();
 
-        String savedUsername = sharedPreferences.getString(USERNAME_KEY, null);
-        if (!TextUtils.isEmpty(savedUsername)) {
-            binding.etLogInName.setText(savedUsername);
-        } else {
-            Toast.makeText(requireContext(), "Kayıt Yok.", Toast.LENGTH_SHORT).show();
+        String savedUsername = sharedPreferences.getString(USERNAME_KEY, "");
+        String savedPassword = sharedPreferences.getString(PASSWORD_KEY, "");
+
+        Boolean isValidUsername = false;
+        Boolean isValidPassword = false;
+
+
+        if (savedUsername.equals(username)) {
+            isValidUsername = true;
         }
 
 
-        /*if(savedUsername == username) {
-            Toast.makeText(requireContext(), "Kayıtlı Kullanıcı",Toast.LENGTH_LONG).show();
-        }else {
-            Toast.makeText(requireContext(), "Kullanıcı Kayıtı Bulunamadı.",Toast.LENGTH_LONG).show();
-        }*/
+        if (savedPassword.equals(password)) {
+            isValidPassword = true;
+        }
 
-        //////
 
-        /*if(password == savedPassword) {
-            Toast.makeText(requireContext(), "Kayıt Yapıldı.",Toast.LENGTH_LONG).show();
-        } else if(password != savedPassword){
-            Toast.makeText(requireContext(), "Kullanıcı Kayıtı Bulunamadı.",Toast.LENGTH_LONG).show();
+        if (isValidUsername && isValidPassword) {
+            Toast.makeText(requireContext(), "Giriş Başarılı", Toast.LENGTH_SHORT).show();
+            transitionFromLogInToCategories();
         } else {
-            Toast.makeText(requireContext(), "Bu Alan Boş Bırakılamaz.",Toast.LENGTH_LONG).show();
-        }*/
-
-        /////
-
-        /*AlertDialog.Builder builder = new AlertDialog.Builder(requireContext());
-        if(savedUsername.equals("Kayıt Yok")){
-            builder.setMessage("Önce Kayıt Yapınız");
-        }else{
-            builder.setMessage("Kayıtlı İsim : " + savedUsername + "\nKayıtlı Parola : " + savedPassword);
-        }*/
+            Toast.makeText(requireContext(), "Giriş Bilgileri Hatalıdır.", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void transitionFromLoginToSignUp() {

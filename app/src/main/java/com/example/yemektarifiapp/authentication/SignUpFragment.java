@@ -70,22 +70,6 @@ public class SignUpFragment extends Fragment {
         } else {
             Toast.makeText(requireContext(), "Lütfen Alanları Doldurunuz.", Toast.LENGTH_SHORT).show();
         }
-
-
-        /*if (!TextUtils.isEmpty(username) && !TextUtils.isEmpty(password) && !TextUtils.isEmpty(email)) {
-            if (binding.checkBox.isChecked()) {
-                editor = preferences.edit();
-                editor.putString(USERNAME_KEY, username);
-                editor.putString(EMAIL_KEY, email);
-                editor.putString(PASSWORD_KEY, password);
-                editor.commit();
-                Toast.makeText(requireContext(), "Kullanıcı Adınız Başarıyla Kayıt Oldu.", Toast.LENGTH_SHORT).show();
-            } else {
-                Toast.makeText(requireContext(), "Başarıyla Giriş Yaptınız.", Toast.LENGTH_SHORT).show();
-            }
-        } else {
-            Toast.makeText(requireContext(), "Lütfen Alanları Doldurunuz.", Toast.LENGTH_SHORT).show();
-        }*/
     }
 
     public void transitionFromSignUpToReset() {
