@@ -1,31 +1,26 @@
 package com.example.yemektarifiapp.category;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.example.yemektarifiapp.databinding.FragmentCategoryBinding;
-import com.example.yemektarifiapp.util.ChangeFragment;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+
 import com.example.yemektarifiapp.R;
-import com.example.yemektarifiapp.subcategory.SubCategoryFragment;
-import com.example.yemektarifiapp.util.DummyListGenerator;
+import com.example.yemektarifiapp.databinding.FragmentCategoryBinding;
+import com.example.yemektarifiapp.subcategory.soup.SoupCategoryFragment;
+import com.example.yemektarifiapp.util.ChangeFragment;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class CategoryFragment extends Fragment implements CategoryInterface {
 
     private FragmentCategoryBinding binding;
 
-    ArrayList<CategoryModel> modelArrayList;
+    ArrayList<CategoryMenuModel> modelArrayList;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -35,56 +30,50 @@ public class CategoryFragment extends Fragment implements CategoryInterface {
     }
 
     public void initAdapter() {
-        CategoryAdapter adapter = new CategoryAdapter(getList(), this);
+        CategoryAdapter adapter = new CategoryAdapter(getCategoryList(), this);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getContext(), 2);
         binding.recyclerView.setLayoutManager(gridLayoutManager);
         binding.recyclerView.setAdapter(adapter);
     }
 
-    public List<CategoryModel> getList() {
-        //RecipeModel tipinde bır listen olak
-        //recıpeModel -- ımage ve rext
-        // Recipe model listrını retun edecek
+    public ArrayList<CategoryMenuModel> getCategoryList() {
         modelArrayList = new ArrayList<>();
-        DummyListGenerator listGenerator = new DummyListGenerator();
 
-        modelArrayList.add(new CategoryModel(CategoryMenuIds.DESERT, "DESSERTS", R.drawable.ic_dessert, listGenerator.getDessertList()));
-        modelArrayList.add(new CategoryModel(CategoryMenuIds.SOUP, "SOUPS", R.drawable.ic_soup, listGenerator.getSoupList()));
-        modelArrayList.add(new CategoryModel(CategoryMenuIds.SALADS, "SALADS", R.drawable.ic_salad, listGenerator.getSaladList()));
-        modelArrayList.add(new CategoryModel(CategoryMenuIds.LEGUMES, "LEGUMES", R.drawable.ic_legume, listGenerator.getLegumeList()));
-        modelArrayList.add(new CategoryModel(CategoryMenuIds.VEGETABLES, "VEGETABLES", R.drawable.ic_vegetable, listGenerator.getVegetableList()));
-        modelArrayList.add(new CategoryModel(CategoryMenuIds.MEATS, "MEATS", R.drawable.ic_meat, listGenerator.getMeatList()));
+        modelArrayList.add(new CategoryMenuModel(CategoryMenuIds.DESERT, "DESSERTS", R.drawable.ic_dessert));
+        modelArrayList.add(new CategoryMenuModel(CategoryMenuIds.SOUP, "SOUPS", R.drawable.ic_soup));
+        modelArrayList.add(new CategoryMenuModel(CategoryMenuIds.SALADS, "SALADS", R.drawable.ic_salad));
+        modelArrayList.add(new CategoryMenuModel(CategoryMenuIds.LEGUMES, "LEGUMES", R.drawable.ic_legume));
+        modelArrayList.add(new CategoryMenuModel(CategoryMenuIds.VEGETABLES, "VEGETABLES", R.drawable.ic_vegetable));
+        modelArrayList.add(new CategoryMenuModel(CategoryMenuIds.MEATS, "MEATS", R.drawable.ic_meat));
         return modelArrayList;
     }
 
     @Override
-    public void onItemClick(CategoryModel recipeCategoriesModel, int position) {
+    public void onItemClick(CategoryMenuModel recipeCategoriesModel, int position) {
         //Bundle ile fragmentlar arası gönderecegımız veriyi ekliyoruz.
         Bundle bundle = new Bundle();
+        // bundle'a eklenecekler burada aklenebılır.
 
-        /*Bundle'a verı ekleyecegız kontroller yapıp şartı sağlayan liste verısını eklıyoruz:
-         Adapterda tıklanan ıtem'ın verısıne göre check edıyoruz
-        tıklanan item'ın posiiton bilgisini alıp liste içerisinden datalar ile check edıyoruz.*/
-
-        if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.DESERT) {
-            bundle.putSerializable("list", modelArrayList.get(position).getSubList());
-        } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.SOUP) {
-            bundle.putSerializable("list", modelArrayList.get(position).getSubList());
-        } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.SALADS) {
-            bundle.putSerializable("list", modelArrayList.get(position).getSubList());
-        } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.LEGUMES) {
-            bundle.putSerializable("list", modelArrayList.get(position).getSubList());
-        } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.VEGETABLES) {
-            bundle.putSerializable("list", modelArrayList.get(position).getSubList());
-        } else {
-            bundle.putSerializable("list", modelArrayList.get(position).getSubList());
-        }
-
-
+        Fragment fragment;
         // Gideceğimiz fragment'ın nesnesini oluşturalım ve onun instance'si ile işlemler yapalım:
-        Fragment fragment = new SubCategoryFragment();
-        //ilgili fragment'ın argument'ıne gönderecegımız bılgılerı ıceren bundle'ı yerleştiriyoruz.
-        fragment.setArguments(bundle);
+        if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.DESERT) {
+            // fragment = DessertFragment();
+            fragment = new SoupCategoryFragment();
+        } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.SOUP) {
+            fragment = new SoupCategoryFragment();
+            fragment.setArguments(bundle); //ilgili fragment'ın argument'ıne gönderecegımız bılgılerı ıceren bundle'ı yerleştiriyoruz.
+        } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.SALADS) {
+            fragment = new SoupCategoryFragment();
+
+        } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.LEGUMES) {
+            fragment = new SoupCategoryFragment();
+
+        } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.VEGETABLES) {
+            fragment = new SoupCategoryFragment();
+
+        } else {
+            fragment = new SoupCategoryFragment();
+        }
 
         // fragment'ı degıstırelım
         ChangeFragment changeFragment = new ChangeFragment(getContext());

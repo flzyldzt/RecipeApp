@@ -1,14 +1,14 @@
-package com.example.yemektarifiapp.recipedetail;
+package com.example.yemektarifiapp.subcategory.soup.detail;
 
 import java.io.Serializable;
 
-public class DetailModel implements Serializable {
+public class SoupDetailModel implements Serializable {
 
     private int imageId;
     private String calorie, person, material, recipe;
 
 
-    public DetailModel(int imageId, String calorie, String person, String material, String recipe) {
+    public SoupDetailModel(int imageId, String calorie, String person, String material, String recipe) {
         this.imageId = imageId;
         this.recipe = recipe;
         this.material = material;

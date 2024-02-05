@@ -1,6 +1,6 @@
 package com.example.yemektarifiapp.subcategory;
 
-import com.example.yemektarifiapp.recipedetail.DetailModel;
+import com.example.yemektarifiapp.subcategory.soup.detail.SoupDetailModel;
 
 public class SubCategoryModel {
 
@@ -8,12 +8,12 @@ public class SubCategoryModel {
 
     private int imageId;
 
-    private DetailModel detailModel;
+    private SoupDetailModel soupDetailModel;
 
-    public SubCategoryModel(String title, int imageId, DetailModel recipeDetailModel) {
+    public SubCategoryModel(String title, int imageId, SoupDetailModel recipeSoupDetailModel) {
         this.title = title;
         this.imageId = imageId;
-        this.detailModel = recipeDetailModel;
+        this.soupDetailModel = recipeSoupDetailModel;
     }
 
     /* TODO :App geneli Tüm bosluklar ctrl alt l yapılacak "reformat"*/
@@ -38,11 +38,11 @@ public class SubCategoryModel {
         this.imageId = imageId;
     }
 
-    public DetailModel getDetailModel() {
-        return detailModel;
+    public SoupDetailModel getDetailModel() {
+        return soupDetailModel;
     }
 
-    public void setDetailModel(DetailModel detailModel) {
-        this.detailModel = detailModel;
+    public void setDetailModel(SoupDetailModel soupDetailModel) {
+        this.soupDetailModel = soupDetailModel;
     }
 }

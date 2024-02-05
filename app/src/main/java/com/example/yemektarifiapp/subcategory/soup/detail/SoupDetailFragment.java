@@ -1,30 +1,28 @@
-package com.example.yemektarifiapp.recipedetail;
+package com.example.yemektarifiapp.subcategory.soup.detail;
 
 
-import android.databinding.tool.util.L;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
-
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.FragmentSubDetailBinding;
 import com.example.yemektarifiapp.databinding.LayoutBottomSheetDialogMaterialBinding;
+import com.example.yemektarifiapp.subcategory.soup.networking.SoupTariffResponseModel;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-public class DetailFragment extends Fragment {
+public class SoupDetailFragment extends Fragment {
 
 
     private FragmentSubDetailBinding binding;
-    DetailModel detail;
+    SoupTariffResponseModel detail;
 
     public BottomSheetDialog bottomSheetDialogMaterial, bottomSheetDialogRecipe;
     public static final String RECIPE_DETAIL_MODEL_KEY = "detail";
@@ -50,14 +48,15 @@ public class DetailFragment extends Fragment {
     }
 
     private void initArguments() {
-        detail = (DetailModel) requireArguments().getSerializable(RECIPE_DETAIL_MODEL_KEY);
+        detail = (SoupTariffResponseModel) requireArguments().getSerializable(RECIPE_DETAIL_MODEL_KEY);
     }
 
 
     private void setViewParams() {
-        binding.ivDetailPicture.setImageResource(detail.getImageId());
-        binding.tvDetailCalorie.setText(detail.getCalorie());
-        binding.tvDetailPerson.setText(detail.getPerson());
+        //binding.ivDetailPicture.setImageResource(detail.getIcon());
+        binding.ivDetailPicture.setImageResource(R.drawable.ic_soup);
+        binding.tvDetailCalorie.setText(detail.getName());
+        binding.tvDetailPerson.setText(detail.getRecipe());
     }
 
     private void onClickMaterial() {
@@ -78,7 +77,7 @@ public class DetailFragment extends Fragment {
         materialBinding = LayoutBottomSheetDialogMaterialBinding.inflate(getLayoutInflater());
 
         //TextView tvMaterialDescription = bottomView.findViewById(R.id.tvMaterialDescription);
-        materialBinding.tvMaterialDescription.setText(detail.getMaterial());
+        materialBinding.tvMaterialDescription.setText(detail.getMaterials());
 
         //Button btnClose = bottomView.findViewById(R.id.btnClose);
         materialBinding.btnClose.setOnClickListener(v -> bottomSheetDialogMaterial.dismiss());

@@ -1,8 +1,8 @@
 package com.example.yemektarifiapp.util;
 
 import com.example.yemektarifiapp.R;
-import com.example.yemektarifiapp.recipedetail.DetailModel;
 import com.example.yemektarifiapp.subcategory.SubCategoryModel;
+import com.example.yemektarifiapp.subcategory.soup.detail.SoupDetailModel;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Fırın Sütlaç",
                         R.drawable.firin_sutlac,
-                        new DetailModel(R.drawable.firin_sutlac,
+                        new SoupDetailModel(R.drawable.firin_sutlac,
                                 "1 porsiyon için 286 kaloridir.",
                                 "4-6 kişilik",
                                 "1 litre süt\n" +
@@ -44,7 +44,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Magnolia",
                         R.drawable.magnolia,
-                        new DetailModel(R.drawable.magnolia,
+                        new SoupDetailModel(R.drawable.magnolia,
                                 "1 porsiyon için 443 kaloridir.",
                                 "6 kişilik",
                                 "Muhallebisi için;\n" +
@@ -79,7 +79,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Aşure",
                         R.drawable.asure,
-                        new DetailModel(R.drawable.asure,
+                        new SoupDetailModel(R.drawable.asure,
                                 "1 porsiyon için 350 kaloridir.",
                                 "16+ kişilik",
                                 "2 su bardağı aşurelik buğday\n" +
@@ -117,7 +117,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Vişneli Cheesecake",
                         R.drawable.visneli_cheesecake,
-                        new DetailModel(R.drawable.visneli_cheesecake,
+                        new SoupDetailModel(R.drawable.visneli_cheesecake,
                                 "Orta büyüklükte 1 dilim Frambuazlı Cheesecake yaklaşık olarak 441 kaloridir.",
                                 "10-12 kişilik",
                                 "Cheesecake Tabanı için:\n" +
@@ -162,7 +162,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Güllaç",
                         R.drawable.gullac,
-                        new DetailModel(R.drawable.gullac,
+                        new SoupDetailModel(R.drawable.gullac,
                                 "Orta büyüklükteki 1 dilim güllaç yaklaşık olarak 250 kaloridir.",
                                 "8-10 kişilik",
                                 "12 yaprak güllaç\n" +
@@ -194,7 +194,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Ezogelin Çorbası",
                         R.drawable.ezogelin,
-                        new DetailModel(R.drawable.ezogelin,
+                        new SoupDetailModel(R.drawable.ezogelin,
                                 "Orta büyüklükte 1 kase ezogelin çorbası yaklaşık olarak 91 kaloriye denk gelmektedir.",
                                 "8-10 kişilik",
                                 "1 yemek kaşığı sıvı yağ\n" +
@@ -234,7 +234,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Yayla Çorbası",
                         R.drawable.yayla,
-                        new DetailModel(R.drawable.yayla,
+                        new SoupDetailModel(R.drawable.yayla,
                                 "Orta büyüklükteki 1 kase yayla çorbası yaklaşık olarak 94 kaloriye denk gelmektedir.",
                                 "4-6 kişilik",
                                 "1 fincan pirinç (Türk kahvesi fincanı)\n" +
@@ -260,7 +260,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Mercimek Çorbası",
                         R.drawable.mercimek,
-                        new DetailModel(R.drawable.mercimek,
+                        new SoupDetailModel(R.drawable.mercimek,
                                 "Orta büyüklükteki 1 kase kırmızı mercimek çorbası yaklaşık olarak 62 kaloridir.",
                                 "6-8 kişilik",
                                 "2 su bardağı kırmızı mercimek\n" +
@@ -293,7 +293,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Mantar Çorbası",
                         R.drawable.mantar,
-                        new DetailModel(R.drawable.mantar,
+                        new SoupDetailModel(R.drawable.mantar,
                                 "Orta büyüklükte 1 kase mantar çorbası yaklaşık olarak 133 kaloridir.",
                                 "2-4 kişilik",
                                 "500 gram kültür mantarı\n" +
@@ -322,7 +322,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Şehriyeli Tavuk Suyu Çorbası",
                         R.drawable.sehriyeli_tavuk,
-                        new DetailModel(R.drawable.sehriyeli_tavuk,
+                        new SoupDetailModel(R.drawable.sehriyeli_tavuk,
                                 "1 kase şehriyeli tavuk suyu çorba yaklaşık olarak 110 kaloridir.",
                                 "4-6 kişilik",
                                 "1 tavuk incik veya 2 tavuk but\n" +
@@ -353,7 +353,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Arpa Şehriye Salatası",
                         R.drawable.arpa_sehriye_salatasi,
-                        new DetailModel(R.drawable.arpa_sehriye_salatasi,
+                        new SoupDetailModel(R.drawable.arpa_sehriye_salatasi,
                                 "1 kase arpa şehriye salatası yaklaşık olarak 260 kaloridir.",
                                 "6-8 kişilik",
                                 "2 su bardağı arpa şehriye\n" +
@@ -379,7 +379,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Mercimek Köftesi",
                         R.drawable.mercimek_koftesi,
-                        new DetailModel(R.drawable.mercimek_koftesi,
+                        new SoupDetailModel(R.drawable.mercimek_koftesi,
                                 "1 adet mercimek köftesi, yaklaşık olarak 39 kaloridir.",
                                 "4-6 kişilik",
                                 "1 kase haşlanmış yeşil mercimek (1 su bardağı haşlanmamış mercimek)\n" +
@@ -402,7 +402,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Haydari",
                         R.drawable.haydari,
-                        new DetailModel(R.drawable.haydari,
+                        new SoupDetailModel(R.drawable.haydari,
                                 "Orta büyüklükte 1 kase haydari yaklaşık olarak 300 kaloridir.",
                                 "2-4 kişilik",
                                 "6 yemek kaşığı süzme yoğurt\n" +
@@ -427,7 +427,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Humus",
                         R.drawable.humus,
-                        new DetailModel(R.drawable.humus,
+                        new SoupDetailModel(R.drawable.humus,
                                 "Orta büyüklükte 1 porsiyon humus yaklaşık olarak 339 kaloridir.",
                                 "7-8 kişilik",
                                 "500 gram koçbaşı nohut (Haşlanmış, kabukları alınmış hali ile yaklaşık 2-3 su bardağı)\n" +
@@ -466,7 +466,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Kısır",
                         R.drawable.kisir,
-                        new DetailModel(R.drawable.kisir,
+                        new SoupDetailModel(R.drawable.kisir,
                                 "Orta büyüklükte 1 kase kısır yaklaşık olarak 178 kaloridir.",
                                 "4-6 kişilik",
                                 "1 büyük su bardağı ince bulgur\n" +
@@ -505,7 +505,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Fellah Köfte",
                         R.drawable.fellah_kofte,
-                        new DetailModel(R.drawable.fellah_kofte,
+                        new SoupDetailModel(R.drawable.fellah_kofte,
                                 "1 porsiyon ( 277g) fellah köftesi 331 kaloridir.",
                                 "6-8 kişilik",
                                 "2 su bardağı köftelik bulgur\n" +
@@ -555,7 +555,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "İçli Köfte",
                         R.drawable.icli_kofte,
-                        new DetailModel(R.drawable.icli_kofte,
+                        new SoupDetailModel(R.drawable.icli_kofte,
                                 "Orta büyüklükte bir içli köfte yaklaşık 349 kaloridir.",
                                 "1-2 kişilik",
                                 "Dışı için;\n" +
@@ -597,7 +597,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Kuru Fasulye",
                         R.drawable.kuru_fasulye,
-                        new DetailModel(R.drawable.kuru_fasulye,
+                        new SoupDetailModel(R.drawable.kuru_fasulye,
                                 "Orta büyüklükte 1 kase kuru fasulye yaklaşık olarak 267 kaloridir.",
                                 "6-8 kişilik",
                                 "2 su bardağı kuru fasulye\n" +
@@ -621,7 +621,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Keşkek",
                         R.drawable.keskek,
-                        new DetailModel(R.drawable.keskek,
+                        new SoupDetailModel(R.drawable.keskek,
                                 "1 porsiyon keşkek yaklaşık olarak 481 kaloridir.",
                                 "12-14 kişilik",
                                 "1 kg aşurelik bütün buğday\n" +
@@ -645,7 +645,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Barbunya Pilaki",
                         R.drawable.barbunya_pilaki,
-                        new DetailModel(R.drawable.barbunya_pilaki,
+                        new SoupDetailModel(R.drawable.barbunya_pilaki,
                                 "1 porsiyon zeytinyağlı barbunya pilaki yaklaşık olarak 415 kaloridir.",
                                 "2-4 kişilik",
                                 "500 gram taze barbunya\n" +
@@ -676,7 +676,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Biber Dolması",
                         R.drawable.biber_dolmasi,
-                        new DetailModel(R.drawable.biber_dolmasi,
+                        new SoupDetailModel(R.drawable.biber_dolmasi,
                                 "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
                                 "4-6 kişilik",
                                 "Yarım kg dolmalık biber\n" +
@@ -709,7 +709,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Yaprak Sarması",
                         R.drawable.yaprak_sarmasi,
-                        new DetailModel(R.drawable.yaprak_sarmasi,
+                        new SoupDetailModel(R.drawable.yaprak_sarmasi,
                                 "1 adet yaprak sarması yaklaşık olarak 32 kaloridir.",
                                 "6-8 kişilik",
                                 "500 gram tokat yaprağı (salamura)\n" +
@@ -742,7 +742,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Patatesli Patlıcan Oturtma",
                         R.drawable.patatesli_patlican,
-                        new DetailModel(R.drawable.patatesli_patlican,
+                        new SoupDetailModel(R.drawable.patatesli_patlican,
                                 "1 porsiyon patatesli patlıcan oturtma yaklaşık olarak 326 kaloridir.",
                                 "4-6 kişilik",
                                 "3 adet patlıcan\n" +
@@ -776,7 +776,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Taze Fasulye",
                         R.drawable.taze_fasulye,
-                        new DetailModel(R.drawable.taze_fasulye,
+                        new SoupDetailModel(R.drawable.taze_fasulye,
                                 "Orta porsiyon taze fasulye yemeği yaklaşık olarak 31,3 kaloridir.",
                                 "4-6 kişilik",
                                 "600 gr taze yeşil fasulye (çalı fasulye kullandım)\n" +
@@ -802,7 +802,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Etli Bezelye",
                         R.drawable.etli_bezelye,
-                        new DetailModel(R.drawable.etli_bezelye,
+                        new SoupDetailModel(R.drawable.etli_bezelye,
                                 "1 porsiyon etli bezelye yaklaşık olarak 360 kaloridir.",
                                 "6-8 kişilik",
                                 "Yarım kilogram bezelye\n" +
@@ -836,7 +836,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Kadınbudu Köfte",
                         R.drawable.kadinbudu_kofte,
-                        new DetailModel(R.drawable.kadinbudu_kofte,
+                        new SoupDetailModel(R.drawable.kadinbudu_kofte,
                                 "1 adet kadınbudu köfte yaklaşık olarak 203 kaloridir.",
                                 "4-6 kişilik",
                                 "Köftesi için;\n" +
@@ -875,7 +875,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Beyti Kebabı",
                         R.drawable.beyti_kebabi,
-                        new DetailModel(R.drawable.beyti_kebabi,
+                        new SoupDetailModel(R.drawable.beyti_kebabi,
                                 "1 dilim beyti kebabı yaklaşık olarak 97,8 kaloridir.",
                                 "4-6 kişilik",
                                 "2 adet yufka\n" +
@@ -918,7 +918,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Tavuk Sote",
                         R.drawable.tavuk_sote,
-                        new DetailModel(R.drawable.tavuk_sote,
+                        new SoupDetailModel(R.drawable.tavuk_sote,
                                 "Orta büyüklükteki 1 porsiyon tavuk göğsü yaklaşık olarak 288 kaloridir.",
                                 "2-4 kişilik",
                                 "Yarım kg tavuk göğsü\n" +
@@ -947,7 +947,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Ali Nazik Kebabı",
                         R.drawable.ali_nazik_kebabi,
-                        new DetailModel(R.drawable.ali_nazik_kebabi,
+                        new SoupDetailModel(R.drawable.ali_nazik_kebabi,
                                 "Orta porsiyon Alinazik kebabı yaklaşık olarak 407 kaloridir.",
                                 "4-6 kişilik",
                                 "400 gram süzme yoğurt\n" +
@@ -981,7 +981,7 @@ public class DummyListGenerator {
                 new SubCategoryModel(
                         "Fırında Köfte Patates",
                         R.drawable.kofte_patates,
-                        new DetailModel(R.drawable.kofte_patates,
+                        new SoupDetailModel(R.drawable.kofte_patates,
                                 "Orta porsiyon fırında köfte patates yaklaşık olarak 260 kaloridir.",
                                 "4-6 kişilik",
                                 " 2-3 adet patates\n" +
