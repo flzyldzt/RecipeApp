@@ -1,47 +1,47 @@
 [
-  {
-    "name": "Biber Dolması",
-    "id": "1",
-    "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
-    "calorie": "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
-    "person": "4-6 kişilik",
-    "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
-    "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur."
-  },
-  {
-    "name": "Yaprak Sarması",
-    "id": "2",
-    "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
-    "calorie": "1 adet yaprak sarması yaklaşık olarak 32 kaloridir.",
-    "person": "6-8 kişilik",
-    "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
-    "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur."
-  },
-  {
-    "name": "Patatesli Patlıcan Oturtma",
-    "id": "3",
-    "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
-    "calorie": "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
-    "person": "4-6 kişilik",
-    "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
-    "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur."
-  },
-  {
-    "name": "Taze Fasulye",
-    "id": "4",
-    "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
-    "calorie": "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
-    "person": "4-6 kişilik",
-    "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
-    "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur."
-  },
-  {
-    "name": "Etli Bezelye",
-    "id": "5",
-    "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
-    "calorie": "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
-    "person": "4-6 kişilik",
-    "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
-    "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur."
-  }
+    {
+      "name": "Biber Dolması",
+      "id": "1",
+      "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
+      "calorie": "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
+      "person": "4-6 kişilik",
+      "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
+      "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur.İçini yemek harcında kullanabiliriz.Bir kaba hazırladığımız soğan, pirinç, salça, maydanoz, domates, karabiber, tuz, nane ve çok az sıvı yağı ekleyip iyice karıştıralım.Daha sonra bu harcı biberlere dolduralım.Harcı doldurduğumuz biberleri, tencereye dizelim.Harcı yaptığımız kabın içine sıcak su koyalım.O artık göz kararı olacak biberlerin yarısına kadar gelecek şekilde kabın içine koyduğumuz suya 1 yemek kaşığı salça ekleyelim ve eritelim.Bu karışımı biberlerin üstüne gelmeyecek şekilde tencereye, biberlerin yarısına gelene kadar dökelim.Kestiğimiz domateslerle biberlerin üstünü kapatalım.Daha sonra biberlerin üstüne çok az sıvı yağ veya zeytinyağı gezdirelim.Kısık ateşte yemeğimizi pişirelim."
+    },
+    {
+      "name": "Yaprak Sarması",
+      "id": "2",
+      "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
+      "calorie": "1 adet yaprak sarması yaklaşık olarak 32 kaloridir.",
+      "person": "6-8 kişilik",
+      "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
+      "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur.İçini yemek harcında kullanabiliriz.Bir kaba hazırladığımız soğan, pirinç, salça, maydanoz, domates, karabiber, tuz, nane ve çok az sıvı yağı ekleyip iyice karıştıralım.Daha sonra bu harcı biberlere dolduralım.Harcı doldurduğumuz biberleri, tencereye dizelim.Harcı yaptığımız kabın içine sıcak su koyalım.O artık göz kararı olacak biberlerin yarısına kadar gelecek şekilde kabın içine koyduğumuz suya 1 yemek kaşığı salça ekleyelim ve eritelim.Bu karışımı biberlerin üstüne gelmeyecek şekilde tencereye, biberlerin yarısına gelene kadar dökelim.Kestiğimiz domateslerle biberlerin üstünü kapatalım.Daha sonra biberlerin üstüne çok az sıvı yağ veya zeytinyağı gezdirelim.Kısık ateşte yemeğimizi pişirelim."
+    },
+    {
+      "name": "Patatesli Patlıcan Oturtma",
+      "id": "3",
+      "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
+     "calorie": "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
+      "person": "4-6 kişilik",
+      "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
+      "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur.İçini yemek harcında kullanabiliriz.Bir kaba hazırladığımız soğan, pirinç, salça, maydanoz, domates, karabiber, tuz, nane ve çok az sıvı yağı ekleyip iyice karıştıralım.Daha sonra bu harcı biberlere dolduralım.Harcı doldurduğumuz biberleri, tencereye dizelim.Harcı yaptığımız kabın içine sıcak su koyalım.O artık göz kararı olacak biberlerin yarısına kadar gelecek şekilde kabın içine koyduğumuz suya 1 yemek kaşığı salça ekleyelim ve eritelim.Bu karışımı biberlerin üstüne gelmeyecek şekilde tencereye, biberlerin yarısına gelene kadar dökelim.Kestiğimiz domateslerle biberlerin üstünü kapatalım.Daha sonra biberlerin üstüne çok az sıvı yağ veya zeytinyağı gezdirelim.Kısık ateşte yemeğimizi pişirelim."
+    },
+    {
+      "name": "Taze Fasulye",
+      "id": "4",
+      "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
+      "calorie": "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
+      "person": "4-6 kişilik",
+      "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
+      "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur.İçini yemek harcında kullanabiliriz.Bir kaba hazırladığımız soğan, pirinç, salça, maydanoz, domates, karabiber, tuz, nane ve çok az sıvı yağı ekleyip iyice karıştıralım.Daha sonra bu harcı biberlere dolduralım.Harcı doldurduğumuz biberleri, tencereye dizelim.Harcı yaptığımız kabın içine sıcak su koyalım.O artık göz kararı olacak biberlerin yarısına kadar gelecek şekilde kabın içine koyduğumuz suya 1 yemek kaşığı salça ekleyelim ve eritelim.Bu karışımı biberlerin üstüne gelmeyecek şekilde tencereye, biberlerin yarısına gelene kadar dökelim.Kestiğimiz domateslerle biberlerin üstünü kapatalım.Daha sonra biberlerin üstüne çok az sıvı yağ veya zeytinyağı gezdirelim.Kısık ateşte yemeğimizi pişirelim."
+    },
+    {
+      "name": "Etli Bezelye",
+      "id": "5",
+      "icon": "https://www.ardaninmutfagi.com/yemek-tarifleri/salatalar/arpa-sehriye-salatasi-2",
+      "calorie": "Orta büyüklükteki 1 adet biber dolması yaklaşık olarak 132 kaloridir.",
+      "person": "4-6 kişilik",
+      "materials": "Yarım kg dolmalık biber,Her biber için 1 yemek kaşığı pirinç,1 adet soğan,1 yemek kaşığı salça,Maydanoz,2-3 adet domates,Karabiber,Tuz,Nane,Sıvı yağ-Zeytinyağı",
+      "recipe": "Dolmalık biberlerimizi temizleyelim.Soğanları, domatesi küçük küçük doğrayalım.Domatesin kenarlarını biberlerin üstünü kapatmak için kullanacağız o yüzden önce kapatmak için kullanacaklarımızı kesersek daha iyi olur.İçini yemek harcında kullanabiliriz.Bir kaba hazırladığımız soğan, pirinç, salça, maydanoz, domates, karabiber, tuz, nane ve çok az sıvı yağı ekleyip iyice karıştıralım.Daha sonra bu harcı biberlere dolduralım.Harcı doldurduğumuz biberleri, tencereye dizelim.Harcı yaptığımız kabın içine sıcak su koyalım.O artık göz kararı olacak biberlerin yarısına kadar gelecek şekilde kabın içine koyduğumuz suya 1 yemek kaşığı salça ekleyelim ve eritelim.Bu karışımı biberlerin üstüne gelmeyecek şekilde tencereye, biberlerin yarısına gelene kadar dökelim.Kestiğimiz domateslerle biberlerin üstünü kapatalım.Daha sonra biberlerin üstüne çok az sıvı yağ veya zeytinyağı gezdirelim.Kısık ateşte yemeğimizi pişirelim."
+    }
 ]
