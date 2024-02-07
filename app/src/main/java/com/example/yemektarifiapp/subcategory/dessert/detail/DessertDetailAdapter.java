@@ -1,4 +1,4 @@
-package com.example.yemektarifiapp.subcategory.soup.detail;
+package com.example.yemektarifiapp.subcategory.dessert.detail;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -10,15 +10,16 @@ import com.example.yemektarifiapp.databinding.ItemSubDetailBinding;
 
 import java.util.List;
 
-public class SoupDetailAdapter extends RecyclerView.Adapter<SoupDetailAdapter.DetailHolder> {
+public class DessertDetailAdapter extends RecyclerView.Adapter<DessertDetailAdapter.DetailHolder> {
 
     private ItemSubDetailBinding binding;
 
-    private final List<SoupDetailModel> list;
+    private final List<DessertDetailModel> list;
 
-    public SoupDetailAdapter(List<SoupDetailModel> list) {
+    public DessertDetailAdapter(List<DessertDetailModel> list) {
         this.list = list;
     }
+
 
     @NonNull
     @Override
@@ -29,11 +30,10 @@ public class SoupDetailAdapter extends RecyclerView.Adapter<SoupDetailAdapter.De
 
     @Override
     public void onBindViewHolder(@NonNull DetailHolder holder, int position) {
-        SoupDetailModel soupDetailModel = list.get(position);
-
-        binding.ivDetailPicture.setImageResource(soupDetailModel.getImageId());
-        binding.tvDetailCalorie.setText(soupDetailModel.getCalorie());
-        binding.tvDetailPerson.setText(soupDetailModel.getPerson());
+        DessertDetailModel dessertDetailModel = list.get(position);
+        binding.ivDetailPicture.setImageResource(dessertDetailModel.getImageId());
+        binding.tvDetailCalorie.setText(dessertDetailModel.getCalorie());
+        binding.tvDetailPerson.setText(dessertDetailModel.getPerson());
     }
 
     @Override
@@ -42,7 +42,6 @@ public class SoupDetailAdapter extends RecyclerView.Adapter<SoupDetailAdapter.De
     }
 
     public class DetailHolder extends RecyclerView.ViewHolder {
-
         ItemSubDetailBinding binding;
 
         public DetailHolder(ItemSubDetailBinding detailBinding) {
@@ -51,3 +50,5 @@ public class SoupDetailAdapter extends RecyclerView.Adapter<SoupDetailAdapter.De
         }
     }
 }
+
+

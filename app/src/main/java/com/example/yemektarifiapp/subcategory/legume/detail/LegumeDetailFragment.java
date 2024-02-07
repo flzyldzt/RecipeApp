@@ -1,5 +1,4 @@
-package com.example.yemektarifiapp.subcategory.soup.detail;
-
+package com.example.yemektarifiapp.subcategory.legume.detail;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,31 +14,27 @@ import androidx.fragment.app.Fragment;
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.FragmentSubDetailBinding;
 import com.example.yemektarifiapp.databinding.LayoutBottomSheetDialogMaterialBinding;
-import com.example.yemektarifiapp.subcategory.soup.networking.SoupTariffResponseModel;
+import com.example.yemektarifiapp.subcategory.legume.networking.LegumeTariffResponseModel;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-public class SoupDetailFragment extends Fragment {
-
+public class LegumeDetailFragment extends Fragment {
 
     private FragmentSubDetailBinding binding;
-    SoupTariffResponseModel detail;
 
+    LegumeTariffResponseModel detail;
     public BottomSheetDialog bottomSheetDialogMaterial, bottomSheetDialogRecipe;
-    public static final String SOUP_RECIPE_MODEL_DETAIL_KEY = "soupDetail";
+    public static final String LEGUME_RECIPE_MODEL_DETAIL_KEY = "legumeDetail";
 
-    @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initArguments();
     }
 
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentSubDetailBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
-    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         setViewParams();
@@ -48,9 +43,8 @@ public class SoupDetailFragment extends Fragment {
     }
 
     private void initArguments() {
-        detail = (SoupTariffResponseModel) requireArguments().getSerializable(SOUP_RECIPE_MODEL_DETAIL_KEY);
+        detail = (LegumeTariffResponseModel) requireArguments().getSerializable(LEGUME_RECIPE_MODEL_DETAIL_KEY);
     }
-
 
     private void setViewParams() {
         //binding.ivDetailPicture.setImageResource(detail.getIcon());

@@ -10,7 +10,12 @@ import androidx.recyclerview.widget.GridLayoutManager;
 
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.FragmentCategoryBinding;
+import com.example.yemektarifiapp.subcategory.dessert.DessertCategoryFragment;
+import com.example.yemektarifiapp.subcategory.legume.LegumeCategoryFragment;
+import com.example.yemektarifiapp.subcategory.meat.MeatCategoryFragment;
+import com.example.yemektarifiapp.subcategory.salad.SaladCategoryFragment;
 import com.example.yemektarifiapp.subcategory.soup.SoupCategoryFragment;
+import com.example.yemektarifiapp.subcategory.vegetable.VegetableCategoryFragment;
 import com.example.yemektarifiapp.util.ChangeFragment;
 
 import java.util.ArrayList;
@@ -57,22 +62,18 @@ public class CategoryFragment extends Fragment implements CategoryInterface {
         Fragment fragment;
         // Gideceğimiz fragment'ın nesnesini oluşturalım ve onun instance'si ile işlemler yapalım:
         if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.DESERT) {
-            // fragment = DessertFragment();
-            fragment = new SoupCategoryFragment();
+            fragment = new DessertCategoryFragment();
         } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.SOUP) {
             fragment = new SoupCategoryFragment();
             fragment.setArguments(bundle); //ilgili fragment'ın argument'ıne gönderecegımız bılgılerı ıceren bundle'ı yerleştiriyoruz.
         } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.SALADS) {
-            fragment = new SoupCategoryFragment();
-
+            fragment = new SaladCategoryFragment();
         } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.LEGUMES) {
-            fragment = new SoupCategoryFragment();
-
+            fragment = new LegumeCategoryFragment();
         } else if (recipeCategoriesModel.getMenuId() == CategoryMenuIds.VEGETABLES) {
-            fragment = new SoupCategoryFragment();
-
+            fragment = new VegetableCategoryFragment();
         } else {
-            fragment = new SoupCategoryFragment();
+            fragment = new MeatCategoryFragment();
         }
 
         // fragment'ı degıstırelım

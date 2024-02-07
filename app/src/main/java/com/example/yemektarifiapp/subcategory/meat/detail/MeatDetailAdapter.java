@@ -1,4 +1,4 @@
-package com.example.yemektarifiapp.subcategory.soup.detail;
+package com.example.yemektarifiapp.subcategory.meat.detail;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -10,30 +10,27 @@ import com.example.yemektarifiapp.databinding.ItemSubDetailBinding;
 
 import java.util.List;
 
-public class SoupDetailAdapter extends RecyclerView.Adapter<SoupDetailAdapter.DetailHolder> {
-
+public class MeatDetailAdapter extends RecyclerView.Adapter<MeatDetailAdapter.DetailHolder> {
     private ItemSubDetailBinding binding;
+    private final List<MeatDetailModel> list;
 
-    private final List<SoupDetailModel> list;
-
-    public SoupDetailAdapter(List<SoupDetailModel> list) {
+    public MeatDetailAdapter(List<MeatDetailModel> list) {
         this.list = list;
     }
 
     @NonNull
     @Override
-    public DetailHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MeatDetailAdapter.DetailHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         binding = ItemSubDetailBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
         return new DetailHolder(binding);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull DetailHolder holder, int position) {
-        SoupDetailModel soupDetailModel = list.get(position);
-
-        binding.ivDetailPicture.setImageResource(soupDetailModel.getImageId());
-        binding.tvDetailCalorie.setText(soupDetailModel.getCalorie());
-        binding.tvDetailPerson.setText(soupDetailModel.getPerson());
+    public void onBindViewHolder(@NonNull MeatDetailAdapter.DetailHolder holder, int position) {
+        MeatDetailModel meatDetailModel = list.get(position);
+        binding.ivDetailPicture.setImageResource(meatDetailModel.getImageId());
+        binding.tvDetailCalorie.setText(meatDetailModel.getCalorie());
+        binding.tvDetailPerson.setText(meatDetailModel.getPerson());
     }
 
     @Override
@@ -42,7 +39,6 @@ public class SoupDetailAdapter extends RecyclerView.Adapter<SoupDetailAdapter.De
     }
 
     public class DetailHolder extends RecyclerView.ViewHolder {
-
         ItemSubDetailBinding binding;
 
         public DetailHolder(ItemSubDetailBinding detailBinding) {

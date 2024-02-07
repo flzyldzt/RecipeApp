@@ -6,7 +6,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 
 public interface SoupTariffServiceInterface {
-    @GET("b0ac6e85-5475-4093-905b-7f353d324d47")
+    @GET("4ade2d27-7c92-4bf6-a35d-02bb94a0e6b2")
         //soupTariff
     Call<List<SoupTariffResponseModel>> getSoupTariffService();
 }

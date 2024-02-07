@@ -16,12 +16,6 @@ public class SubCategoryModel {
         this.soupDetailModel = recipeSoupDetailModel;
     }
 
-    /* TODO :App geneli Tüm bosluklar ctrl alt l yapılacak "reformat"*/
-
-    /* TODO : image isimleri drawable içerisindeki    icon ise   --> ic_your_name  şeklınde  image ise  -->  img_your_name   isimlendırılecek*/
-
-    /*TODO : button_background   yanlıs kullanım    dogrusu  -> background_button  */
-
     public String getTitle() {
         return title;
     }

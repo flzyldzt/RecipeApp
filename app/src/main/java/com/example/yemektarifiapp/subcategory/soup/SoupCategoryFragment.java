@@ -1,6 +1,6 @@
 package com.example.yemektarifiapp.subcategory.soup;
 
-import static com.example.yemektarifiapp.subcategory.soup.detail.SoupDetailFragment.RECIPE_DETAIL_MODEL_KEY;
+import static com.example.yemektarifiapp.subcategory.soup.detail.SoupDetailFragment.SOUP_RECIPE_MODEL_DETAIL_KEY;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -77,14 +77,11 @@ public class SoupCategoryFragment extends Fragment implements SoupTariffOnClickI
     @Override
     public void onItemClick(SoupTariffResponseModel soupTariffResponseModel, int position) {
         Bundle bundle = new Bundle();
-        bundle.putSerializable(RECIPE_DETAIL_MODEL_KEY, soupTariffResponseModel);
+        bundle.putSerializable(SOUP_RECIPE_MODEL_DETAIL_KEY, soupTariffResponseModel);
 
-        // Gideceğimiz fragment'ın nesnesini oluşturalım ve onun instance'si ile işlemler yapalım:
         Fragment fragment = new SoupDetailFragment();
-        //ilgili fragment'ın argument'ıne gönderecegımız bılgılerı ıceren bundle'ı yerleştiriyoruz.
         fragment.setArguments(bundle);
 
-        // fragment'ı degıstırelım
         ChangeFragment changeFragment = new ChangeFragment(getContext());
         changeFragment.change(fragment);
     }

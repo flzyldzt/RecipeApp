@@ -1,4 +1,4 @@
-package com.example.yemektarifiapp.subcategory.soup.detail;
+package com.example.yemektarifiapp.subcategory.salad.detail;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
@@ -10,13 +10,13 @@ import com.example.yemektarifiapp.databinding.ItemSubDetailBinding;
 
 import java.util.List;
 
-public class SoupDetailAdapter extends RecyclerView.Adapter<SoupDetailAdapter.DetailHolder> {
+public class SaladDetailAdapter extends RecyclerView.Adapter<SaladDetailAdapter.DetailHolder> {
 
     private ItemSubDetailBinding binding;
 
-    private final List<SoupDetailModel> list;
+    private final List<SaladDetailModel> list;
 
-    public SoupDetailAdapter(List<SoupDetailModel> list) {
+    public SaladDetailAdapter(List<SaladDetailModel> list) {
         this.list = list;
     }
 
@@ -29,11 +29,10 @@ public class SoupDetailAdapter extends RecyclerView.Adapter<SoupDetailAdapter.De
 
     @Override
     public void onBindViewHolder(@NonNull DetailHolder holder, int position) {
-        SoupDetailModel soupDetailModel = list.get(position);
-
-        binding.ivDetailPicture.setImageResource(soupDetailModel.getImageId());
-        binding.tvDetailCalorie.setText(soupDetailModel.getCalorie());
-        binding.tvDetailPerson.setText(soupDetailModel.getPerson());
+        SaladDetailModel saladDetailModel = list.get(position);
+        binding.ivDetailPicture.setImageResource(saladDetailModel.getImageId());
+        binding.tvDetailCalorie.setText(saladDetailModel.getCalorie());
+        binding.tvDetailPerson.setText(saladDetailModel.getPerson());
     }
 
     @Override

@@ -1,5 +1,4 @@
-package com.example.yemektarifiapp.subcategory.soup.detail;
-
+package com.example.yemektarifiapp.subcategory.vegetable.detail;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,19 +14,16 @@ import androidx.fragment.app.Fragment;
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.FragmentSubDetailBinding;
 import com.example.yemektarifiapp.databinding.LayoutBottomSheetDialogMaterialBinding;
-import com.example.yemektarifiapp.subcategory.soup.networking.SoupTariffResponseModel;
+import com.example.yemektarifiapp.subcategory.vegetable.networking.VegetableTariffResponseModel;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-public class SoupDetailFragment extends Fragment {
-
-
+public class VegetableDetailFragment extends Fragment {
     private FragmentSubDetailBinding binding;
-    SoupTariffResponseModel detail;
-
+    VegetableTariffResponseModel detail;
     public BottomSheetDialog bottomSheetDialogMaterial, bottomSheetDialogRecipe;
-    public static final String SOUP_RECIPE_MODEL_DETAIL_KEY = "soupDetail";
 
-    @Override
+    public static final String VEGETABLE_RECIPE_MODEL_DETAIL_KEY = "vegetableDetail";
+
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         initArguments();
@@ -48,15 +44,15 @@ public class SoupDetailFragment extends Fragment {
     }
 
     private void initArguments() {
-        detail = (SoupTariffResponseModel) requireArguments().getSerializable(SOUP_RECIPE_MODEL_DETAIL_KEY);
+        detail = (VegetableTariffResponseModel) requireArguments().getSerializable(VEGETABLE_RECIPE_MODEL_DETAIL_KEY);
     }
 
 
     private void setViewParams() {
         //binding.ivDetailPicture.setImageResource(detail.getIcon());
         binding.ivDetailPicture.setImageResource(R.drawable.ic_soup);
-        binding.tvDetailCalorie.setText(detail.getName());
-        binding.tvDetailPerson.setText(detail.getRecipe());
+        binding.tvDetailCalorie.setText(detail.getCalorie());
+        binding.tvDetailPerson.setText(detail.getPerson());
     }
 
     private void onClickMaterial() {
@@ -96,4 +92,5 @@ public class SoupDetailFragment extends Fragment {
         bottomSheetDialogRecipe.setContentView(bottomView);
         bottomSheetDialogRecipe.show();
     }
+
 }

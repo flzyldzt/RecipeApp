@@ -8,7 +8,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class RetrofitProvider {
 
-    private static final String BASE_URL = "https://run.mocky.io/v3/";
+    //https://run.mocky.io/v3/
+    private static final String BASE_URL = "https://flzyldzt.github.io/";
     private static Retrofit retrofit;
 
     public static Retrofit getRetrofitInstance() {

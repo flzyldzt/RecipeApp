@@ -1,5 +1,4 @@
-package com.example.yemektarifiapp.subcategory.soup.detail;
-
+package com.example.yemektarifiapp.subcategory.salad.detail;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,17 +14,17 @@ import androidx.fragment.app.Fragment;
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.FragmentSubDetailBinding;
 import com.example.yemektarifiapp.databinding.LayoutBottomSheetDialogMaterialBinding;
-import com.example.yemektarifiapp.subcategory.soup.networking.SoupTariffResponseModel;
+import com.example.yemektarifiapp.subcategory.salad.networking.SaladTariffResponseModel;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-public class SoupDetailFragment extends Fragment {
+public class SaladDetailFragment extends Fragment {
 
 
     private FragmentSubDetailBinding binding;
-    SoupTariffResponseModel detail;
+    SaladTariffResponseModel detail;
 
     public BottomSheetDialog bottomSheetDialogMaterial, bottomSheetDialogRecipe;
-    public static final String SOUP_RECIPE_MODEL_DETAIL_KEY = "soupDetail";
+    public static final String SALAD_RECIPE_MODEL_DETAIL_KEY = "saladDetail";
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -48,7 +47,7 @@ public class SoupDetailFragment extends Fragment {
     }
 
     private void initArguments() {
-        detail = (SoupTariffResponseModel) requireArguments().getSerializable(SOUP_RECIPE_MODEL_DETAIL_KEY);
+        detail = (SaladTariffResponseModel) requireArguments().getSerializable(SALAD_RECIPE_MODEL_DETAIL_KEY);
     }
 
 
