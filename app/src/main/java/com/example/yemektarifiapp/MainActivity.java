@@ -1,8 +1,8 @@
 package com.example.yemektarifiapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.yemektarifiapp.authentication.LogInFragment;
 import com.example.yemektarifiapp.databinding.ActivityMainBinding;
@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         changeFragment(savedInstanceState);
     }
+
 
     private void changeFragment(Bundle savedInstanceState) {
 

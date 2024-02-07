@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitProvider {
 
     //https://run.mocky.io/v3/
-    private static final String BASE_URL = "https://flzyldzt.github.io/";
+    private static final String BASE_URL = "https://github.com/flzyldzt/recipe_project_data/blob/main/";
     private static Retrofit retrofit;
 
     public static Retrofit getRetrofitInstance() {
