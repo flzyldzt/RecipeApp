@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.ItemCategorySubBinding;
 import com.example.yemektarifiapp.subcategory.soup.networking.SoupTariffResponseModel;
 
@@ -37,8 +36,7 @@ public class SoupCategoryAdapter extends RecyclerView.Adapter<SoupCategoryAdapte
     public void onBindViewHolder(@NonNull CategoryListHolder holder, @SuppressLint("RecyclerView") int position) {
         SoupTariffResponseModel soapTariffItem = list.get(position);
         binding.tvSubCategoryText.setText(soapTariffItem.getName());
-        //  binding.ivSubCategoryPicture.setImageURI(Uri.parse(soapTariffItem.getIcon()));  //TODO Glide kullanılacak
-        binding.ivSubCategoryPicture.setImageResource(R.drawable.ic_soup);
+        //binding.ivSubCategoryPicture.setImageURI(Uri.parse(soapTariffItem.getIcon()));  //TODO Glide kullanılacak
         binding.clCategorySub.setOnClickListener(v -> soupTariffOnClickInterface.onItemClick(list.get(position), position));
     }
 

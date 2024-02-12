@@ -7,15 +7,19 @@ import java.io.Serializable;
 
 public class SaladTariffResponseModel implements Serializable {
 
+
     @SerializedName("name")
     @Expose
     private String name;
     @SerializedName("id")
     @Expose
     private String id;
-    @SerializedName("icon")
+    @SerializedName("calorie")
     @Expose
-    private String icon;
+    private String calorie;
+    @SerializedName("person")
+    @Expose
+    private String person;
     @SerializedName("materials")
     @Expose
     private String materials;
@@ -39,12 +43,20 @@ public class SaladTariffResponseModel implements Serializable {
         this.id = id;
     }
 
-    public String getIcon() {
-        return icon;
+    public String getCalorie() {
+        return calorie;
     }
 
-    public void setIcon(String icon) {
-        this.icon = icon;
+    public void setCalorie(String calorie) {
+        this.calorie = calorie;
+    }
+
+    public String getPerson() {
+        return person;
+    }
+
+    public void setPerson(String person) {
+        this.person = person;
     }
 
     public String getMaterials() {
@@ -62,5 +74,6 @@ public class SaladTariffResponseModel implements Serializable {
     public void setRecipe(String recipe) {
         this.recipe = recipe;
     }
+
 
 }

@@ -11,18 +11,20 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.bumptech.glide.Glide;
 import com.example.yemektarifiapp.R;
-import com.example.yemektarifiapp.databinding.FragmentSubDetailBinding;
+import com.example.yemektarifiapp.databinding.FragmentDetailBinding;
 import com.example.yemektarifiapp.databinding.LayoutBottomSheetDialogMaterialBinding;
 import com.example.yemektarifiapp.subcategory.vegetable.networking.VegetableTariffResponseModel;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class VegetableDetailFragment extends Fragment {
-    private FragmentSubDetailBinding binding;
+    private FragmentDetailBinding binding;
     VegetableTariffResponseModel detail;
     public BottomSheetDialog bottomSheetDialogMaterial, bottomSheetDialogRecipe;
 
     public static final String VEGETABLE_RECIPE_MODEL_DETAIL_KEY = "vegetableDetail";
+
 
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +33,7 @@ public class VegetableDetailFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentSubDetailBinding.inflate(inflater, container, false);
+        binding = FragmentDetailBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -41,6 +43,7 @@ public class VegetableDetailFragment extends Fragment {
         setViewParams();
         onClickMaterial();
         onClickRecipe();
+        pullWithGlideVegetables();
     }
 
     private void initArguments() {
@@ -49,8 +52,6 @@ public class VegetableDetailFragment extends Fragment {
 
 
     private void setViewParams() {
-        //binding.ivDetailPicture.setImageResource(detail.getIcon());
-        binding.ivDetailPicture.setImageResource(R.drawable.ic_soup);
         binding.tvDetailCalorie.setText(detail.getCalorie());
         binding.tvDetailPerson.setText(detail.getPerson());
     }
@@ -93,4 +94,37 @@ public class VegetableDetailFragment extends Fragment {
         bottomSheetDialogRecipe.show();
     }
 
+    public void pullWithGlideVegetables() {
+        if (detail.getId().equals("1")) {
+            String biberDolmasıImgUrl = "https://i.pinimg.com/originals/e1/21/fc/e121fcdbd373e6edeb6e37b9f6425b48.png";
+            Glide.with(this)
+                    .load(biberDolmasıImgUrl)
+                    .error(R.drawable.error)
+                    .into(binding.ivDetailPicture);
+        } else if (detail.getId().equals("2")) {
+            String yaprakSarmaImgUrl = "https://i.pinimg.com/originals/20/89/bb/2089bba840a7e7d5109168fe1930e646.png";
+            Glide.with(this)
+                    .load(yaprakSarmaImgUrl)
+                    .error(R.drawable.error)
+                    .into(binding.ivDetailPicture);
+        } else if (detail.getId().equals("3")) {
+            String patatesliPatlıcanImgUrl = "https://i.pinimg.com/736x/67/46/a8/6746a838bcee63aca2c354dd287a88e2.jpg";
+            Glide.with(this)
+                    .load(patatesliPatlıcanImgUrl)
+                    .error(R.drawable.error)
+                    .into(binding.ivDetailPicture);
+        } else if (detail.getId().equals("4")) {
+            String tazeFasulyeImgUrl = "https://i.pinimg.com/originals/2f/29/e3/2f29e39b1101360419019d6ea487035a.png";
+            Glide.with(this)
+                    .load(tazeFasulyeImgUrl)
+                    .error(R.drawable.error)
+                    .into(binding.ivDetailPicture);
+        } else {
+            String etliBezelyeImgUrl = "https://i.pinimg.com/474x/2a/6d/47/2a6d47a5d65242f02f6cfa21c7d660e3.jpg";
+            Glide.with(this)
+                    .load(etliBezelyeImgUrl)
+                    .error(R.drawable.error)
+                    .into(binding.ivDetailPicture);
+        }
+    }
 }

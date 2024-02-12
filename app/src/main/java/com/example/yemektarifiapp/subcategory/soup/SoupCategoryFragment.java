@@ -30,6 +30,7 @@ import retrofit2.Response;
 public class SoupCategoryFragment extends Fragment implements SoupTariffOnClickInterface {
 
     private FragmentSubCategoryBinding binding;
+    SoupTariffResponseModel model;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

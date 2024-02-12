@@ -7,6 +7,6 @@ import retrofit2.http.GET;
 
 public interface LegumeTariffServiceInterface {
 
-    @GET("3ad2a0a9-c2ec-434f-8809-7276489f2f56")
+    @GET("legumes.json")
     Call<List<LegumeTariffResponseModel>> getLegumeTariffService();
 }

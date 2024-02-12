@@ -12,9 +12,12 @@ public class SoupTariffResponseModel implements Serializable {
     @SerializedName("id")
     @Expose
     private String id;
-    @SerializedName("icon")
+    @SerializedName("calorie")
     @Expose
-    private String icon;
+    private String calorie;
+    @SerializedName("person")
+    @Expose
+    private String person;
     @SerializedName("materials")
     @Expose
     private String materials;
@@ -38,6 +41,22 @@ public class SoupTariffResponseModel implements Serializable {
         this.id = id;
     }
 
+    public String getCalorie() {
+        return calorie;
+    }
+
+    public void setCalorie(String calorie) {
+        this.calorie = calorie;
+    }
+
+    public String getPerson() {
+        return person;
+    }
+
+    public void setPerson(String person) {
+        this.person = person;
+    }
+
     public String getMaterials() {
         return materials;
     }
@@ -52,9 +71,5 @@ public class SoupTariffResponseModel implements Serializable {
 
     public void setRecipe(String recipe) {
         this.recipe = recipe;
-    }
-
-    public String getIcon() {
-        return icon;
     }
 }

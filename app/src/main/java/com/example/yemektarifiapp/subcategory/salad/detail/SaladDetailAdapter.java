@@ -6,13 +6,13 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.yemektarifiapp.databinding.ItemSubDetailBinding;
+import com.example.yemektarifiapp.databinding.ItemDetailBinding;
 
 import java.util.List;
 
 public class SaladDetailAdapter extends RecyclerView.Adapter<SaladDetailAdapter.DetailHolder> {
 
-    private ItemSubDetailBinding binding;
+    private ItemDetailBinding binding;
 
     private final List<SaladDetailModel> list;
 
@@ -23,7 +23,7 @@ public class SaladDetailAdapter extends RecyclerView.Adapter<SaladDetailAdapter.
     @NonNull
     @Override
     public DetailHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        binding = ItemSubDetailBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
+        binding = ItemDetailBinding.inflate(LayoutInflater.from(parent.getContext()), parent, false);
         return new DetailHolder(binding);
     }
 
@@ -42,9 +42,9 @@ public class SaladDetailAdapter extends RecyclerView.Adapter<SaladDetailAdapter.
 
     public class DetailHolder extends RecyclerView.ViewHolder {
 
-        ItemSubDetailBinding binding;
+        ItemDetailBinding binding;
 
-        public DetailHolder(ItemSubDetailBinding detailBinding) {
+        public DetailHolder(ItemDetailBinding detailBinding) {
             super(detailBinding.getRoot());
             binding = detailBinding;
         }
