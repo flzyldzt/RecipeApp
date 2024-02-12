@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Arpa Şehriye Salatası",
+    "id": "1",
+    "calorie": "1 kase arpa şehriye salatası yaklaşık olarak 260 kaloridir.",
+    "person": "6-8 kişilik",
+    "materials": "2 su bardağı arpa şehriye,2 yemek kaşığı sıvı yağ (şehriyeleri pişirmek için),3 su bardağı su ve tuz,4-5 dal taze soğan,Yarım demet maydanoz,Bir tutam dereotu,2-3 adet közlenmiş kırmızı biber,1 kutu mısır konservesi,4-5 adet kornişon turşu,Tuz, limon suyu, zeytinyağı",
+    "recipe": "Öncelikle 2 yemek kaşığı sıvı yağda arpa şehriyeleri hafif kavurun.Sıcak su ve az tuz ekleyerek pilav pişirir gibi pişirin.Pişen pilavı soğumaya bırakın.Tüm yeşillikleri ince ince kıyın.Kırmızı biberi ve turşuları da ufak ufak doğrayın.Soğuyan pilavı tüm malzemelerle birlikte harmanlayın.Afiyet olsun."
+  },
+  {
+    "name": "Mercimek Köftesi",
+    "id": "2",
+    "calorie": "1 adet mercimek köftesi,yaklaşık olarak 39 kaloridir.",
+    "person": "4-6 kişilik",
+    "materials": "1 kase haşlanmış yeşil mercimek(1 su bardağı haşlanmamış mercimek),1 orta boy kapya biber,6-7 adet kornişon turşu,2 tutam maydanoz,1 tutam dereotu,2 dal taze soğan (isteğe bağlı),3-4 yemek kaşığı zeytinyağı,1 adet limon suyu,yarım tatlı kaşığı tuz",
+    "recipe": "Haşlanmış mercimeği bir kaba alalım.Eğer hazırda haşlanmış mercimeğiniz yoksa 1 su bardağı mercimeği haşlayarak 1 kase haşlanmış mercimek elde edebilirsiniz.Kapya biberi ve kornişon turşuları minik minik doğrayıp mercimeklerin üzerine ekleyelim.Dereotu ve maydanozu da doğrayalım.İnce kıydığımız yeşillikleri de diğer malzemelerin üzerine ekleyelim.Zeytinyağı,limon ve tuzunu ekleyip iyice karıştıralım.Dilediğiniz gibi servis yapın.Afiyet şifa olsun."
+  },
+  {
+    "name": "Haydari",
+    "id": "3",
+    "calorie": "Orta büyüklükte 1 kase haydari yaklaşık olarak 300 kaloridir.",
+    "person": "2-4 kişilik",
+    "materials": "6 yemek kaşığı süzme yoğurt,1 tutam dereotu1 ,yemek kaşığı tereyağı,1 tatlı kaşığı nane1,çay kaşığı tuz,1 dilim beyaz peynir,1 diş sarımsak",
+    "recipe": "İlk olarak tavaya tereyağını alarak kızdıralım.Bu aşamada cağı çok yüksek ateşte açıp yağı yakmamaya dikkat edelim.Daha sonra naneyi ekleyerek 1-2 tur karıştıralım ve ocaktan alalım.Karıştırma kabına süzme yoğurdu alalım.Diğer taraftan beyaz peyniri çatalla ezerek ufalayalım, dereotunu ince ince kıyalım.Süzme yoğurdun üzerine peynir ve dereotunu ilave edelim.Son olarak naneli tereyağı,ezilmiş sarımsak,tuzu ekleyerek karıştıralım.Haydari mezesini servis tabağına alarak üzerini zeytinyağı ve dereotu ile süsleyelim.Haydari servise hazır.Afiyet olsun."
+  },
+  {
+    "name": "Humus",
+    "id": "4",
+    "calorie": "Orta büyüklükte 1 porsiyon humus yaklaşık olarak 339 kaloridir.",
+    "person": "7-8 kişilik",
+    "materials": "500 gram koçbaşı nohut (Haşlanmış, kabukları alınmış hali ile yaklaşık 2-3 su bardağı),1,5 çay bardağı ılık su,Humus için;1 çay bardağı ılık su,1/2 (yarım) çay bardağı tahin,1 çay kaşığı kimyon,4 çorba kaşığı limon suyu,3-4 diş sarımsak (ezilmiş),Tuz,Süslemek için:Kimyon,Kırmızı pul biber,Sumak,Kıyılmış maydanoz",
+    "recipe": "Nohutlarınızı bir gece önceden ıslatın,düdüklü tencereye alın.Bir taşım kaynatın,çıkan köpüklü suyu dökün.Tekrar sıcak su ekleyip düdüklü tencerenizde tam pişirin(hafif çatlasın ve kabukları kolay çıkabilecek hal alsın.Nohutların kabuklarını temizleyin,ölçüdeki nohudu elde edin.Kabuksuz nohutları 1,5 çay bardağı su ile orta derinlikte bir tencereye alın.Tekrar ocağa koyun,tahta kaşıkla ezerek suyunu hafifçe çektirin.Ilınmış nohudunuzu el püre yapıcınızdan geçirerek pürüzsüz hal almasını sağlayın.Nohut katı bir hal alacak.(Bu aşamada derin dondurucuda saklayabilirsiniz).2.kez kısık ateşe aldığınız nohuta 1 çay bardağı ılık su ekleyin.Yumuşatın,sürekli karıştırarak açılmasını sağlayın(1 dakika).Ateşten aldığınız sıcak nohuta tahin,limon suyu,ezilmiş sarımsak,tuz ve kimyonu ekleyin.Çok iyi karıştırın.Servis tabağınıza aldığınız ve yaydığınız humusu kimyon,kırmızı pul biber,sumak,kıyılmış maydanoz ile süsleyin.Üzerine incecik zeytinyağı gezdirin.Humus mezesini ılık servis yapın."
+  },
+  {
+    "name": "Kısır",
+    "id": "5",
+    "calorie": "Orta büyüklükte 1 kase kısır yaklaşık olarak 178 kaloridir.",
+    "person": "4-6 kişilik",
+    "materials": "1 büyük su bardağı ince bulgur,Yarım su sıcak su (bulguru ıslatmak için),3 yaprak marul,1 demet maydanoz,3 adet taze soğan,1 yemek kaşığı zeytinyağı(soğanı kavurmak için),1 küçük salatalık,5 tane çeri domates,1 tane orta boy sivri biber,Yarım çay bardağı zeytinyağı(az gelirse ekleme yapın),1 yemek kaşığı nar ekşisi,Karabiber,Pul biber,Kimyon,Tuz,1 yemek kaşığı biber salçası,1 tatlı kaşığı domates salçası,1 diş sarımsak,1 küçük soğan",
+    "recipe": "Öncelikle bulguru sıcak suyla bir miktar ıslatıyoruz.Ama çok az su ile,sadece suyu döktüğümüz anda hemen kendisini çekecek kadar ve kapağını kapatıp 5 dakika demlendiriyoruz.Küçük bir tavada kuru soğanı ve sarımsağı,1 yemek kaşığı zeytinyağı ile çok az kavurup salçasını ilave ediyoruz.2 dakika daha kavurup ocağı kapatıyoruz.Bulgurun içine döküyoruz ve bütün baharatları,nar ekşisini ve 1 çay bardağı zeytinyağını da ilave edip iyice harmanlıyoruz.İnce ince doğradığımız yeşillikleri ilave edip iyice birbirine yedirdikten sonra en son domateslerimizi ilave edip karıştırıyoruz ve servis yapıyoruz. Afiyet olsun"
+  }
+]

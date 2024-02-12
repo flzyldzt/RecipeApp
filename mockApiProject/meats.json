@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Kadınbudu Köfte",
+    "id": "1",
+    "calorie": "1 adet kadınbudu köfte yaklaşık olarak 203 kaloridir.",
+    "person": "4-6 kişilik",
+    "materials": "Köftesi için;600g köftelik kıyma (az yağlı),1 adet iri kuru soğan,1 yumurta,1 kahve fincanı pirinç,1 çay kaşığı kimyon,1/2 (yarım) çay kaşığı karabiber,1 tatlı kaşığı tuz,Köfteleri bulamak için;1/2 (yarım) çay bardağı galeta unu,1/2 (yarım) çay bardağı buğday unu,1 yumurta,Kızartmak için;2-3 su bardağı sıvı yağ(ay çiçek yağı)",
+    "recipe": "Kıymayı ikiye bölün.Yanmaz tavanıza 2-3 kaşık su ve kıymayı alın,kavurun.Kıymayı ateşten almaya yakın rendelenmiş ve suyu sıkılmış soğanlarınızı ekleyin.1 dk kadar kavurup sonrasında kıymayı soğumaya bırakın.Diğer yandan pirincinizi haşlayın(çok haşlamayın zira yoğurma esnasında parçalanmasın).Yoğurma kabına soğumuş kıyma,çiğ kıyma,haşlanıp süzülmüş pirinci alın.Yumurtayı ve baharatları ekleyin.Köfte harcını yoğurun.En az 2 saat kendini çekmesi ve dinlenmesi için buzdolabında bekletin.Kızartma aşamasında,yağı derin kızartma tenceresine alın.Köftelere iri oval şeklini verin.Köfteleri,önce un ve galeta unu ile harmanlanmış derin kasede karışıma bulayın,ardından çırpılmış yumurtaya batırın.Kızgın yağda kızartın.Afiyet olsun."
+  },
+  {
+    "name": "Beyti Kebabı",
+    "id": "2",
+    "calorie": "1 dilim beyti kebabı yaklaşık olarak 97,8 kaloridir.",
+    "person": "4-6 kişilik",
+    "materials": "2 adet yufka,Sosu İçin;4 adet rendelenmiş domates,2 yemek kaşığı tereyağı,Karabiber,toz kırmızı biber,Tuz,Köftesi İçin;400 g kıyma,1 adet yumurta,1 diş sarımsak,1 adet soğan,1/2 (yarım) çay bardağı galeta unu,Karabiber,pul biber,Tuz,Servis İçin;çırpılmış yoğurt,tuz",
+    "recipe": "Köftesi için; kıyma,yumurta,rendelenmiş soğan ve sarımsak,yarım çay bardağı galeta unu,karabiber,pul biber ve tuzu derince bir kaba alarak yoğuralım.Köfteleri yassı ve uzun şekiller oluşturarak pişirme kağıdı serdiğimiz fırın tepsisine yerleştirelim.185 derece ısınmış fırında 10-12 dakika fırınlayalım.Köftelerimizi fırından aldıktan sonra 1 adet yufkamızı tezgaha alarak ikiye bölelim.Yarım yufkanın üzerine eritilmiş tereyağından güzelce sürelim.Yufkanın geniş tarafına köftelerimizi tek sıra halinde dizelim ve yufkanın kenarlarını içe katlayarak rulo şeklinde saralım. Bu aşamada çok gevşek sarmamalısınız.Tüm köfteleri aynı şekilde sardıktan sonra rulolarımızı verev şeklinde dilimleyerek yağlı kağıt serilmiş fırın tepsisine sıralayalım.Üzerlerine eritilmiş tereyağından sürerek tekrar fırına yerleştirelim.185 dereceye ısıtılmış fırında üzerleri hafif pembeleşinceye kadar pişirelim.Sosu için;küçük bir tavada tereyağını eritelim.Üzerine domates rendesi boşaltarak 3-4 dakika pişirelim.Eğer domates mevsimi değilse renk vermesi için salçada ekleyebilirsiniz.Son olarak baharatları ve tuzu ilave edip karıştıralım sonra ocaktan alalım.Servis tabağına köftelerimizi alalım.Ortasına bolca yoğurt koyalım.Üzerine domates sosundan gezdirip ince kıyılmış maydanoz serpiştirdikten sonra servis edelim."
+  },
+  {
+    "name": "Tavuk Sote",
+    "id": "3",
+    "calorie": "Orta büyüklükteki 1 porsiyon tavuk göğsü yaklaşık olarak 288 kaloridir.",
+    "person": "2-4 kişilik",
+    "materials": "Yarım kg tavuk göğsü,2 yemek kaşığı sıvı yağ,1 tatlı kaşığı domates salçası,2 adet yeşil biber,1 adet kırmızı biber,1 adet soğan,2 diş sarımsak,2 adet domates,Karabiber,Pul biber,Tuz,1 su bardağı su",
+    "recipe": "Tavuk etini kuşbaşı doğrayın.Soğanları yemeklik,biberleri julyen doğrayın,domatesleri de küp küp doğrayın.Kısık ateşte tavukları arada karıştırarak kavurun.Suyunu biraz çektikten sonra soğanları ve ince kesilmiş sarımsağı ekleyin.1-2 dk kavurduktan sonra biberleri ilave edin.Biberler de sotelenince domatesi,salçayı,baharatları ve tuzu ekleyip pişirmeye devam edin.Son olarak 1 bardak suyu ekleyin ve etler pişene kadar kapağı kapalı bir şekilde pişirin."
+  },
+  {
+    "name": "Ali Nazik Kebabı",
+    "id": "4",
+    "calorie": "Orta porsiyon Alinazik kebabı yaklaşık olarak 407 kaloridir.",
+    "person": "4-6 kişilik",
+    "materials": "400 gram süzme yoğurt,3-4 adet kemer patlıcan,Tuz,2-3 diş sarımsak,Diğer Malzemeler;500 gram dana kuşbaşı,1 yemek kaşığı tereyağı,Tuz, karabiber,pul biber,kekik,Yarım su bardağı su,2 yemek kaşığı domates sosu(isteyen 1 yemek kaşığı salça kullanabilir)",
+    "recipe": "Patlıcanları közleyip, kabuklarını temizleyin.İnce ince doğrayın.Soğuduktan sonra,ezilmiş sarımsak ve süzme yoğurtla beraber iyice karıştırın.Tuzunu ayarlayın.Diğer taraftan etleri yıkayıp,suyunu süzdürün.Pişirme kabına alarak kısık ateşte,tencerenin kapağı kapalı bir şekilde etlerin bırakmış olduğu suyu çekmesini bekleyin.Daha sonra tereyağını ilave edin.Tuz hariç, baharatları ve domates sosunu ilave edin.Mutlaka sıcak su ekleyin.Çok sulu olmayacak,sadece koyu kıvamlı bir sosumuz olacak.Etlerin pişme süresi uzarsa,sık sık kontrol edip gerekirse tencerenin dibi tutmaması için az az sıcak su ilave edebilirsiniz.Pişen etlere,son olarak tuzu ilave edin ve ocaktan alın.Servis tabağına önce patlıcanlı harç,üzerine ise etleri koyun.İsteğe göre süsleyerek,servis edebilirsiniz."
+  },
+  {
+    "name": "Fırında Köfte Patates",
+    "id": "5",
+    "calorie": "Orta porsiyon fırında köfte patates yaklaşık olarak 260 kaloridir.",
+    "person": "4-6 kişilik",
+    "materials": "2-3 adet patates,2-3 adet yeşil biber,2 adet domates,Sıvı yağ,1.5  yemek kaşığı domates salçası,Köftesi için;Yarım kg kıyma,1 adet kuru soğan,2-3 diş sarımsak,1 adet yumurta,Yarım su bardağı kadar ufalanmış bayat ekmek içi veya galeta unu,Tuz,Karabiber,Pul biber",
+    "recipe": "Öncelikle köfteler hazırlanır.Bunun için soğan bir kaç parçaya ayrılarak sarımsaklar ve yumurta ile mutfak robotundan geçirilir.İncecik hale gelen soğanlar ve sarımsaklar kıymaya ilave edilir.Bayat ekmek içi,baharatlar ve tuzu da eklenerek köfte harcı yoğurulur.Malzemeler iyice özdeşleşince ufak parçalar koparılarak köfteler şekillendirilir.Patates ve köfteler kızartılır.Patatesler dilimlenir.Tavada sıvı yağ kızdırılarak köfteler ve patatesler hafifçe kızartılır.(Patateslerin çok fazla pişmesine gerek yok).Köfte ve patatesler fırın kabına alınarak pişirilir.Bütün köfte ve patatesler kızartılınca fırın kabına alınırlar ve üzerine salçalı sıcak su gezdirilir.Domates dilimleri ve biberlerle süslenen fırın tepsisi fırına sürülür.Domatesler pişinceye dek yaklaşık 25 dk kadar düşük ısıda pişirilir.Afiyet olsun."
+  }
+]
