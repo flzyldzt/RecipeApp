@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.ItemCategorySubBinding;
 import com.example.yemektarifiapp.subcategory.meat.networking.MeatTariffResponseModel;
+import com.example.yemektarifiapp.util.networking.GlideProvider;
 
 import java.util.List;
 
@@ -33,9 +33,10 @@ public class MeatCategoryAdapter extends RecyclerView.Adapter<MeatCategoryAdapte
     @Override
     public void onBindViewHolder(@NonNull CategoryListHolder holder, int position) {
         MeatTariffResponseModel meatTariffItem = list.get(position);
+
+        GlideProvider glideProvider = new GlideProvider(binding.getRoot().getContext());
+        glideProvider.initGlide(meatTariffItem.getImageUrl(), binding.ivSubCategoryPicture);
         binding.tvSubCategoryText.setText(meatTariffItem.getName());
-        //  binding.ivSubCategoryPicture.setImageURI(Uri.parse(soapTariffItem.getIcon()));  //TODO Glide kullanılacak
-        binding.ivSubCategoryPicture.setImageResource(R.drawable.ic_soup);
         binding.clCategorySub.setOnClickListener(v -> meatTariffOnClickInterface.onItemClick(list.get(position), position));
     }
 

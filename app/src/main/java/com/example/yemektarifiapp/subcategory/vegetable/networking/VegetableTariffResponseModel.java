@@ -12,9 +12,9 @@ public class VegetableTariffResponseModel implements Serializable {
     @SerializedName("id")
     @Expose
     private String id;
-    @SerializedName("icon")
+    @SerializedName("imageUrl")
     @Expose
-    private String icon;
+    private String imageUrl;
     @SerializedName("calorie")
     @Expose
     private String calorie;
@@ -44,12 +44,12 @@ public class VegetableTariffResponseModel implements Serializable {
         this.id = id;
     }
 
-    public String getIcon() {
-        return icon;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setIcon(String icon) {
-        this.icon = icon;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getCalorie() {

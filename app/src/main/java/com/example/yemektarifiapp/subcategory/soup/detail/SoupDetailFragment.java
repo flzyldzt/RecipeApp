@@ -12,11 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.bumptech.glide.Glide;
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.FragmentDetailBinding;
 import com.example.yemektarifiapp.databinding.LayoutBottomSheetDialogMaterialBinding;
 import com.example.yemektarifiapp.subcategory.soup.networking.SoupTariffResponseModel;
+import com.example.yemektarifiapp.util.networking.GlideProvider;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class SoupDetailFragment extends Fragment {
@@ -46,7 +46,6 @@ public class SoupDetailFragment extends Fragment {
         setViewParams();
         onClickMaterial();
         onClickRecipe();
-        pullWithGlideSoups();
     }
 
     private void initArguments() {
@@ -57,6 +56,8 @@ public class SoupDetailFragment extends Fragment {
     private void setViewParams() {
         binding.tvDetailCalorie.setText(detail.getCalorie());
         binding.tvDetailPerson.setText(detail.getPerson());
+        GlideProvider glideProvider = new GlideProvider(requireContext());
+        glideProvider.initGlide(detail.getImageUrl(), binding.ivDetailPicture);
     }
 
     private void onClickMaterial() {
@@ -95,39 +96,5 @@ public class SoupDetailFragment extends Fragment {
 
         bottomSheetDialogRecipe.setContentView(bottomView);
         bottomSheetDialogRecipe.show();
-    }
-
-    public void pullWithGlideSoups() {
-        if (detail.getId().equals("1")) {
-            String ezogelinImageUrl = "https://i.pinimg.com/originals/15/7c/b6/157cb68c58f4c745be8098a0e17dd2df.png";
-            Glide.with(this)
-                    .load(ezogelinImageUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        } else if (detail.getId().equals("2")) {
-            String yaylaImageUrl = "https://kalorisor.com/uploads/images/urun/yayla-corbasi.jpg";
-            Glide.with(this)
-                    .load(yaylaImageUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        } else if (detail.getId().equals("3")) {
-            String mercimekImageUrl = "https://i.pinimg.com/originals/c3/cf/e5/c3cfe5817923b5f28a83559badcc0bb5.jpg";
-            Glide.with(this)
-                    .load(mercimekImageUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        } else if (detail.getId().equals("4")) {
-            String mantarImageUrl = "https://i.pinimg.com/736x/a9/4f/83/a94f836bf7769a5f9ecf95534e162ea7.jpg";
-            Glide.with(this)
-                    .load(mantarImageUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        } else {
-            String tavukImageUrl = "https://www.idilyazar.com/wp-content/uploads/2022/10/tavuksuyucorba.png";
-            Glide.with(this)
-                    .load(tavukImageUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        }
     }
 }
