@@ -19,7 +19,7 @@ import com.example.yemektarifiapp.subcategory.vegetable.detail.VegetableDetailFr
 import com.example.yemektarifiapp.subcategory.vegetable.networking.VegetableTariffResponseModel;
 import com.example.yemektarifiapp.subcategory.vegetable.networking.VegetableTariffServiceInterface;
 import com.example.yemektarifiapp.util.ChangeFragment;
-import com.example.yemektarifiapp.util.RetrofitProvider;
+import com.example.yemektarifiapp.util.networking.RetrofitProvider;
 
 import java.util.List;
 

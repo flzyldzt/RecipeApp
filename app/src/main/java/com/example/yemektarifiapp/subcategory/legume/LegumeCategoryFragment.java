@@ -17,7 +17,7 @@ import com.example.yemektarifiapp.subcategory.legume.detail.LegumeDetailFragment
 import com.example.yemektarifiapp.subcategory.legume.networking.LegumeTariffResponseModel;
 import com.example.yemektarifiapp.subcategory.legume.networking.LegumeTariffServiceInterface;
 import com.example.yemektarifiapp.util.ChangeFragment;
-import com.example.yemektarifiapp.util.RetrofitProvider;
+import com.example.yemektarifiapp.util.networking.RetrofitProvider;
 
 import java.util.List;
 

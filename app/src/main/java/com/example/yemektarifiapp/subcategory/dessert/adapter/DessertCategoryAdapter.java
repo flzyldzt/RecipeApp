@@ -6,9 +6,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.ItemCategorySubBinding;
 import com.example.yemektarifiapp.subcategory.dessert.networking.DessertTariffResponseModel;
+import com.example.yemektarifiapp.util.networking.GlideProvider;
 
 import java.util.List;
 
@@ -35,9 +35,10 @@ public class DessertCategoryAdapter extends RecyclerView.Adapter<DessertCategory
     @Override
     public void onBindViewHolder(@NonNull CategoryListHolder holder, int position) {
         DessertTariffResponseModel dessertTariffItem = list.get(position);
+
+        GlideProvider glideProvider = new GlideProvider(binding.getRoot().getContext());
+        glideProvider.initGlide(dessertTariffItem.getImageUrl(), binding.ivSubCategoryPicture);
         binding.tvSubCategoryText.setText(dessertTariffItem.getName());
-        //  binding.ivSubCategoryPicture.setImageURI(Uri.parse(soapTariffItem.getIcon()));  //TODO Glide kullanılacak
-        binding.ivSubCategoryPicture.setImageResource(R.drawable.ic_soup);
         binding.clCategorySub.setOnClickListener(v -> dessertTariffOnClickInterface.onItemClick(list.get(position), position));
     }
 

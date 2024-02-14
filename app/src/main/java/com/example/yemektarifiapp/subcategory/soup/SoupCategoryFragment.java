@@ -19,7 +19,7 @@ import com.example.yemektarifiapp.subcategory.soup.detail.SoupDetailFragment;
 import com.example.yemektarifiapp.subcategory.soup.networking.SoupTariffResponseModel;
 import com.example.yemektarifiapp.subcategory.soup.networking.SoupTariffServiceInterface;
 import com.example.yemektarifiapp.util.ChangeFragment;
-import com.example.yemektarifiapp.util.RetrofitProvider;
+import com.example.yemektarifiapp.util.networking.RetrofitProvider;
 
 import java.util.List;
 

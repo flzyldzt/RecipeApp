@@ -11,11 +11,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.bumptech.glide.Glide;
 import com.example.yemektarifiapp.R;
 import com.example.yemektarifiapp.databinding.FragmentDetailBinding;
 import com.example.yemektarifiapp.databinding.LayoutBottomSheetDialogMaterialBinding;
 import com.example.yemektarifiapp.subcategory.dessert.networking.DessertTariffResponseModel;
+import com.example.yemektarifiapp.util.networking.GlideProvider;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 public class DessertDetailFragment extends Fragment {
@@ -40,7 +40,6 @@ public class DessertDetailFragment extends Fragment {
         setViewParams();
         onClickMaterial();
         onClickRecipe();
-        pullWithGlideDesserts();
     }
 
     private void initArguments() {
@@ -50,6 +49,8 @@ public class DessertDetailFragment extends Fragment {
     private void setViewParams() {
         binding.tvDetailCalorie.setText(detail.getCalorie());
         binding.tvDetailPerson.setText(detail.getPerson());
+        GlideProvider glideProvider = new GlideProvider(requireContext());
+        glideProvider.initGlide(detail.getImageUrl(), binding.ivDetailPicture);
     }
 
     private void onClickMaterial() {
@@ -88,39 +89,5 @@ public class DessertDetailFragment extends Fragment {
 
         bottomSheetDialogRecipe.setContentView(bottomView);
         bottomSheetDialogRecipe.show();
-    }
-
-    public void pullWithGlideDesserts() {
-        if (detail.getId().equals("1")) {
-            String firinSütlacImgUrl = "https://i.pinimg.com/564x/94/03/31/940331b78ad08540b4ced3615c0d6b38.jpg";
-            Glide.with(this)
-                    .load(firinSütlacImgUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        } else if (detail.getId().equals("2")) {
-            String magnoliaImgUrl = "https://www.kayaciftligi.com.tr/wp-content/uploads/Artboard-1.png";
-            Glide.with(this)
-                    .load(magnoliaImgUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        } else if (detail.getId().equals("3")) {
-            String asureImgUrl = "https://i.pinimg.com/736x/86/c0/17/86c01732cbcc9fa4113042aaf743a001.jpg";
-            Glide.with(this)
-                    .load(asureImgUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        } else if (detail.getId().equals("4")) {
-            String cheesecakeImgUrl = "https://i.pinimg.com/736x/32/c5/a9/32c5a969ab5c314c2d2047671cf74e8f.jpg";
-            Glide.with(this)
-                    .load(cheesecakeImgUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        } else {
-            String gullacImgUrl = "https://i.pinimg.com/736x/77/5e/dc/775edcfdd846b100f8396e925e346a50.jpg";
-            Glide.with(this)
-                    .load(gullacImgUrl)
-                    .error(R.drawable.error)
-                    .into(binding.ivDetailPicture);
-        }
     }
 }

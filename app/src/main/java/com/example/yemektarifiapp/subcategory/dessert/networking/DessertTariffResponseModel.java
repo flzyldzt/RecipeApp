@@ -12,6 +12,9 @@ public class DessertTariffResponseModel implements Serializable {
     @SerializedName("id")
     @Expose
     private String id;
+    @SerializedName("imageUrl")
+    @Expose
+    private String imageUrl;
     @SerializedName("calorie")
     @Expose
     private String calorie;
@@ -24,6 +27,7 @@ public class DessertTariffResponseModel implements Serializable {
     @SerializedName("recipe")
     @Expose
     private String recipe;
+
 
     public String getName() {
         return name;
@@ -39,6 +43,14 @@ public class DessertTariffResponseModel implements Serializable {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
     public String getCalorie() {

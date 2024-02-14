@@ -19,7 +19,7 @@ import com.example.yemektarifiapp.subcategory.meat.detail.MeatDetailFragment;
 import com.example.yemektarifiapp.subcategory.meat.networking.MeatTariffResponseModel;
 import com.example.yemektarifiapp.subcategory.meat.networking.MeatTariffServiceInterface;
 import com.example.yemektarifiapp.util.ChangeFragment;
-import com.example.yemektarifiapp.util.RetrofitProvider;
+import com.example.yemektarifiapp.util.networking.RetrofitProvider;
 
 import java.util.List;
 

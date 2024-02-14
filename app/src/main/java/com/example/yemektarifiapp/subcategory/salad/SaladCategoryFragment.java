@@ -19,7 +19,7 @@ import com.example.yemektarifiapp.subcategory.salad.detail.SaladDetailFragment;
 import com.example.yemektarifiapp.subcategory.salad.networking.SaladTariffResponseModel;
 import com.example.yemektarifiapp.subcategory.salad.networking.SaladTariffServiceInterface;
 import com.example.yemektarifiapp.util.ChangeFragment;
-import com.example.yemektarifiapp.util.RetrofitProvider;
+import com.example.yemektarifiapp.util.networking.RetrofitProvider;
 
 import java.util.List;
 

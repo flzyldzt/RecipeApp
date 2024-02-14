@@ -19,7 +19,7 @@ import com.example.yemektarifiapp.subcategory.dessert.detail.DessertDetailFragme
 import com.example.yemektarifiapp.subcategory.dessert.networking.DessertTariffResponseModel;
 import com.example.yemektarifiapp.subcategory.dessert.networking.DessertTariffServiceInterface;
 import com.example.yemektarifiapp.util.ChangeFragment;
-import com.example.yemektarifiapp.util.RetrofitProvider;
+import com.example.yemektarifiapp.util.networking.RetrofitProvider;
 
 import java.util.List;
 
